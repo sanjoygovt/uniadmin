@@ -1,0 +1,1000 @@
+exit
+cd /var/www/html/
+cd seamless/
+git status
+git add application/models/kms_document/kms_document_model.php
+git commit -m "curl version options"
+gut push
+git push
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+cd /var/www/html/seamless/
+git pull
+exit
+/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
+/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext
+/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf 
+cd /var/www/html/seamless/system/core/plugins/gfPDF/xpdf
+ls
+pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf
+pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
+ /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf
+cd ..
+ls
+cd ..
+ls
+/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf 
+system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf 
+cls
+clear
+yum search glibc.i686
+yum search glibc.i686.
+yum search glibc
+yum search glibc.1686
+yum search glibc.i686
+yum search glibc
+yum install glibc
+pkcon install glibc.i686
+sudo yum install glibc.i686
+/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
+yum install libstdc++.i686
+/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
+exit
+cd /var/www/html/seamless
+git pull
+exit
+cd /var/www/html/seamless
+git pull
+exit
+libreoffice
+libreoffice -help
+libreoffice -version
+exit
+libreoffice --version
+yum install libreoffice-writer
+exit
+cd /var/www/html/idoc-repository/
+sudo soffice --headless --convert-to pdf /var/www/html/idoc-repository/test.ppt --outdir /var/www/html/idoc-repository/
+yum install libreoffice-impress
+ soffice --headless --convert-to pdf /var/www/html/idoc-repository/test.ppt --outdir /var/www/html/idoc-repository/
+soffice --headless --convert-to pdf /var/www/html/idoc-repository/te.xlsx --outdir /var/www/html/idoc-repository/
+yum install libreoffice-calc
+soffice --headless --convert-to pdf /var/www/html/idoc-repository/te.xlsx --outdir /var/www/html/idoc-repository/
+soffice --headless --convert-to pdf /var/www/html/idoc-repository/pp.xlsx --outdir /var/www/html/idoc-repository/
+soffice --headless --convert-to pdf /var/www/html/idoc-repository/pp.xls --outdir /var/www/html/idoc-repository/
+exit
+cd /var/www/html/
+ll
+zip seamless/
+gzip seamless/
+gzip -r seamless/
+exit
+service iptables restart
+sysctl -w net.ipv6.conf.default.disable_ipv6=1
+init 6
+service iptables restart
+sysctl -w net.ipv6.conf.default.disable_ipv6=1
+sysctl -w net.ipv6.conf.all.disable_ipv6=1
+service iptables restart
+exit
+cd /var/www/html/seamless/
+git status
+git update-index --assume-unchanged system/core/libs/license.manager.class.php
+git status
+clear
+ls
+cd ..
+ls
+rm -r d/
+rm -rf d/
+rm -rf bk/
+clear
+mysqldump -u root --password=hG53LJVO6UbOAK28 --events seamless | bzip2 > /var/www/html/database_backup/seamless_`date +%d_%m_%Y`.sql.gz
+exit
+cd /var/www/html/
+cd seamless/
+ls
+git status
+git checkout application/views/header.html
+git status
+git pull
+git status
+git pull
+exit
+git status
+cd /var/www/html/seamless/
+git status
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+cd /var/www/html/seamless/
+git status
+git fetch
+exit
+cd /var/www/html/seamless/
+git add application/models/lms_issue_management
+exit
+cd /var/www/html/seamless/
+git pull
+git status
+git pull
+exit
+git pull
+cd /var/www/html/seamless/
+git pull
+exit
+netstat -ntlp | grep 25
+cd /var/www/html/imailservice/
+ls
+pwd
+tailf /var/log/maillog
+history 
+netstat -ntlp
+telnet smtp.gmail.com 25
+yum install telnet
+telnet smtp.gmail.com 25
+ifconfig 
+vi /etc/sysctl.conf
+sysctl -p
+ifconfig 
+telnet smtp.gmail.com 25
+mail -v asritha.s@ctrls.in
+tailf /var/log/maillog
+vi /var/log/maillog
+hostname 
+ll /var/mail/root
+telnet smtp.gmail.com 465
+tailf /var/log/maillog
+pwd
+mysqldump -u root --password=hG53LJVO6UbOAK28 --events seamless | bzip2 > /var/www/html/database_backup/seamless_`date +%d_%m_%Y`.sql.gz
+exit
+mysqldump -u root --password=hG53LJVO6UbOAK28 --events seamless | bzip2 > /var/www/html/database_backup/seamless_`date +%d_%m_%Y`.sql.gz
+exit
+cd /var/www/html/seamless/
+git pull
+cd /var/www/html/seamless/
+git pull
+git update-index --assume-unchanged application/views/login/login_erp.html 
+git status
+git pull
+git update-index --assume-unchanged application/views/login/login_erp.html 
+git status
+git pull
+git update-index --assume-unchanged application/views/login/login_erp.html 
+git status
+exit
+telnet mail.tegaindustries.com 25
+exit
+telnet mail.tegaindustries.com 25
+exit
+cd /var/www/html/imailservice/
+git pull
+exit
+cd /var/www/html/seamless/
+git status
+git update-index --assume-unchanged  application/public/uploads/curl-session
+git status
+git pull
+exit
+cd /var/www/html/seamless/
+git status
+git pull
+git status
+exit
+cd /var/www/html/seamless
+git status
+git pull
+exit
+cd /var/www/html/seamless/
+git status
+cd application/models/kms_document/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+cd /var/www/html/seamless/
+git pull
+exit
+vi /etc/httpd/conf/httpd.conf 
+cd /var/www/html/
+ls
+df -h
+openssl req -new -newkey rsa:2048 -nodes -keyout tegaknowledgecentre.key -out tegaknowledgecentre.csr
+exit
+pwd
+ls -l
+cp tegaknowledgecentre.csr tegaknowledgecentre.key /var/www/html/
+exit
+openssl req -new -newkey rsa:2048 -nodes -keyout tegaknowledgecentre.key -out tegaknowledgecentre.csr
+cp tegaknowledgecentre.csr tegaknowledgecentre.key /var/www/html/
+exit
+ifconfig
+netstat -ntlp
+cd /var/www/html/
+ll
+cd tegaknowledgecentre
+ll
+locate mod
+ll
+cat /etc/issue
+httpd -v
+httpd -M
+httpd -M | grep ssl
+httpd -M
+locate ssl
+cd /etc/httpd/
+ll
+cd conf
+ll
+cd ..
+cd conf.d
+ll
+httpd -L | grep SSL
+curl --head http://localhost/
+openssl version
+httpd -t -D DUMP_MODULES | grep ssl
+yum install mod_ssl
+cd ..
+ll
+cd ..
+ll
+cp -R httpd/ /opt/httpd_backup
+cd /opt
+ll
+cd httpd_backup/
+ll
+cd ..
+cd /etc/httpd/
+ll
+locate java
+clear
+netstat -ntlp
+yum install mod_ssl
+httpd -t -D DUMP_MODULES | grep ssl
+ll
+mkdir ssl
+ll
+cd conf.d
+ll
+cp ssl.conf ssl.conf-backup
+vi ssl.conf
+cd ..
+ll
+cd conf
+ll
+vi httpd.conf 
+cd /var/www/html/
+ll
+cp tegaknowledgecentre.csr tegaknowledgecentre.key /etc/httpd/ssl/
+cd /etc/httpd/ssl/
+ll
+vi tegaknowledgecentre.crt
+vi gd_bundle-g2-g1.cer
+ll
+pwd
+cd ..
+ll
+cd conf
+LL
+ll
+cd ..
+cd conf.d/
+ll
+vi ssl.conf
+httpd -t
+service httpd statua
+service httpd status
+service httpd reload
+netstat -ntlp | grep 443
+ll
+cd ..
+ll
+cd conf
+netstat -ntlp | grep httpd
+csf -s
+iptables -L
+telnet 45.114.143.14 443
+ll
+cd ..
+cd conf.d/
+ll
+vi tegaknowledgecentre-ssl.conf
+ll
+vi ssl.conf
+ll
+vi <VirtualHost *:443>
+SSLEngine on
+DocumentRoot /var/www/liveapp/
+ServerName live.igainapp.in
+ServerAlias www.live.igainapp.in
+SSLCertificateFile /etc/apache2/ssl4dec15/igainapp.crt
+SSLCertificateKeyFile /etc/apache2/ssl4dec15/igainapp.key
+SSLCACertificateFile /etc/apache2/ssl4dec15/intermediate.crt
+clear
+ll
+vi tegaknowledgecentre-ssl.conf
+httpd -t
+ll
+vi ssl.conf
+vi tegaknowledgecentre-ssl.conf
+vi ssl.conf
+rm -rf tegaknowledgecentre-ssl.conf
+ll
+vi ssl.conf
+httpd -t
+service httpd reload
+httpd -t
+vi ssl.conf
+httpd -t
+vi ssl.conf
+httpd -t
+service httpd reload
+vi ssl.conf
+httpd -t
+service httpd reload
+vi ssl.conf
+httpd -t
+service httpd reload
+service httpd staus
+service httpd status
+ps -aux | grep httpd
+service httpd status
+ps -aux | grep httpd
+ps -ef | grep httpd
+service httpd status
+service httpd start
+service httpd status
+vi ssl.conf
+httpd -t
+service httpd status
+service httpd reload
+netstat -ntlp | grep httpd
+clear
+exit
+cd /etc/httpd/ssl
+ll
+vi tegaknowledgecentre.csr
+exit
+netstat -ntlp
+vi /etc/httpd/conf.d/ssl.conf
+/etc/init.d/httpd restart
+/etc/init.d/httpd status
+/etc/init.d/httpd start
+httpd -t
+vi /etc/httpd/conf.d/ssl.conf
+cd /etc/httpd/ssl/gd_bundle-g2-g
+cd /etc/httpd/ssl/
+ls
+vi /etc/httpd/conf.d/ssl.conf
+cp -a gd_bundle-g2-g1.cer gd_bundle-g2-g1.crt
+vi /etc/httpd/conf.d/ssl.conf
+/etc/init.d/httpd restart
+tailf /var/log/httpd/error_log
+getenforce 
+tailf /var/log/httpd/error_log
+vi /opt/ssl.conf 
+tailf /var/log/httpd/error_log
+vi /etc/httpd/conf.d/ssl.conf
+tailf /var/log/httpd/error_log
+mysqldump -u root --password=hG53LJVO6UbOAK28 --events seamless | bzip2 > /var/www/html/database_backup/seamless_`date +%d_%m_%Y`.sql.gz
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+mysql
+mysql:
+/usr/bin/mysql -u root -p hG53LJVO6UbOAK28
+/usr/bin/mysql -u root -p
+service mysqld restart
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+ls
+ll
+cd ..
+ll
+cd var/www/html/
+ll
+cd tegaknowledgecentre
+ll
+cd seamless/
+ll
+git status
+git update-index --assume-unchanged system/core/config/system.config.php
+git status
+git pull
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+df -h
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git update-index --assume-unchanged application/views/dynamodule/document.html
+git status
+exit
+cmd /C ver
+sh -c 'bash -c '\''cat /tmp/nessus.1482927116'\'''
+clear
+ssh -V
+hostname
+uptime
+date
+uname -a
+df -Th
+cat /etc/fstab
+ip a
+cat /etc/resolv.conf
+rpm -qa > beforepatch
+iptables-save > /opt/iptables.backup
+ps -ef | grep java
+netstat -ntlp
+netstat -ntlp | cut -c19-44 > /opt/bnetstat
+netstat -ntlp|wc -l 
+netstat -nulp
+netstat -nulp|wc -l
+chkconfig --list|grep 3:on
+chkconfig --list|grep 3:on|wc -l
+uname -r
+cat /etc/grub.conf
+exit
+dmidecode | grep Name
+exoit
+exit
+cat /etc/redhat-release `
+cat /etc/redhat-release
+uname -r
+cd /tmp
+wget --user=ctrlsadmin --password=Ct6LSDC123 http://103.1.113.81/pub/rhn6-64.sh
+chmod +x rhn6-64.sh 
+./rhn6-64.sh 
+hostname
+cd
+clear
+cd /tmp
+wget https://access.redhat.com/sites/default/files/rh-cve-2016-5195_5.sh
+bash rh-cve-2016-5195_5.sh 
+cd
+clear
+rhn_check -vv
+yum update kernel
+exit
+clear
+uptime
+date
+df -hT
+cat /etc/fstab 
+cat /etc/resolv.conf 
+ip a
+netstat -ntlp | wc -l
+netstat -nulp | wc -l
+chkconfig --list | grep 3:on | wc -l
+cd /tmp
+bash rh-cve-2016-5195_5.sh 
+rhn_check -vv
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+cd application/controllers/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/application/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/application/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/application/
+cd ..
+ll
+git commit -m "1st commit"
+git status
+git push
+cd /var/www/html/tegaknowledgecentre/seamless/application/
+cd ..
+git status
+git push
+git status
+git push
+git push -u origin master
+git config --global user.name "Tega"
+git config --global user.email susanta.das@somnetics.in
+git push -u origin master
+git pull
+ll
+cd ..
+ll
+tar -cvf tega.tar seamless/
+ll
+cd seamless/
+ll
+git status
+git push
+git config --global --edit
+git push
+ ! [rejected]        master -> master (non-fast-forward)
+git pull --rebase
+git status
+git push
+git status
+clear
+exit
+cd /var/www/html/
+ll
+cd tegaknowledgecentre
+ll
+cd seamless/
+ll
+git status
+ll
+git init
+git status
+git add .
+git status
+cd /var/www/html/tegaknowledgecentre/seamless/
+ll
+git status
+git add .gitattributes 
+git status
+git add .gitignore 
+git status
+ll
+cd /
+ll
+cd var/www/html/
+cd tegaknowledgecentre
+ll
+cd seamless/
+ll
+ll -a
+git status
+git pull
+cd ..
+cd idoc-repository/
+git status
+git pull
+exit
+ll
+cd /var/www/html/tegaknowledgecentre/seamless/
+git status
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre
+cd seamless/
+git pull
+exit
+cd /var/www/html/
+cd tegaknowledgecentre/seamless/
+git pull 
+cd ..
+ll
+cd idoc-repository/
+git status
+git pull
+cd ..
+cd seamless/
+git status
+git update-index --assume-unchanged application/config/app.config.php
+git update-index --assume-unchanged system/core/config/system.config.php 
+git status
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/
+ll
+cd html/
+ll
+cd tegaknowledgecentre/seamless/
+ll
+git status
+git pull
+node init
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git status
+git pull
+exit
+cd /var/www/
+ll
+cd html/tegaknowledgecentre/seamless/
+git pull
+cd /var/www/html/tegaknowledgecentre/seamless/
+git status
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+chmod 777 -R application/public/assets/avatars
+exit
+telnet smtp.gmail.com 465
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git status
+git add .
+git commit -m "avatar"
+git status
+git pull
+git push
+exit
+cd /var/www/html/tegaknowledgecentre
+li
+ls
+cd seamless
+ls
+cd..
+cd ..
+ls
+cd ..
+ls
+cd tegaknowledgecentre
+cd seamless
+ls
+li
+status
+git status
+cd /var/www/html/tegaknowledgecentre/seamless/
+git status
+git pull
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+cd /var/www/html/tegaknowledgecentre/seamless/
+git status
+git pull
+git status
+git add application/public/assets/images/tega_mail_logo.png
+git status
+git push
+git commit -m "ddd"
+git push
+git status
+git commit -m "logo delete"
+git status
+git push 
+git status
+git add application/public/assets/images/tega_mail_logo.png
+git commit -m "logo delete"
+git push 
+git pull --rebase
+git push -f
+git status
+git pull
+git status
+git add application/public/assets/images/tega_mail_logo.png
+git commit -m "logo delete"
+git push
+git checkout -- application/public/assets/images/tega_mail_logo.png
+git status
+git push
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git pull
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git status
+exit
+cd /var/www/html/tegaknowledgecentre/seamless/
+git status
+git pull
+exit
+df -h
+exit
+mkdir /tmp/cd
+mount /dev/cdrom /tmp/cd/
+mkdir /tmp/ext
+df -kh
+cd /tmp/ext/
+tar -xvzf /tmp/cd/VMwareTools-10.0.0-3000743.tar.gz 
+cd vmware-tools-distrib/
+./vmware-install.pl
+cd /
+rm -rf /tmp/cd
+rm -rf /tmp/ext
+exit
+service httpd restart
+exit
+service memcached status
+service memcached restart
+exit
+locate memcached
+cd /etc/sys
+cd /etc/sysconfig/
+ls
+ll
+service memcached status
+ps aux | grep memcached
+locate memcached.conf
+clear
+vi memcached 
+ping localhost
+ifconfig
+cd ..
+vi memcached.conf
+cd ..
+pwd
+clear
+cd home/
+ls
+cd tega/
+ls
+wget https://45.114.143.14/phpinfo.php
+wget https://tegaknowledgecentre.com/phpinfo.php
+scp
+ls
+vi phpinfo.php 
+clear
+pwd
+cat /etc/host
+cat /etc/hosts
+locate Memcached::set
+which Memcached::set
+which php
+whereis memcache
+whereis memcached
+clear
+which php
+cd /usr/bin/php
+cd /usr/bin/
+ls
+ls -l php
+clear
+cd /
+ls
+pwd
+cd /root/
+pwd
+ls
+clear
+ps aux | grep memcached
+localhost
+memcached -h
+memcached - h
+memcached -h
+memcached -v
+clear
+service iptables status
+clear
+service iptables status
+clear
+pwd
+/sbin/iptables -A INPUT -p tcp --destincation-port 11211 -j DROP
+/sbin/iptables -A INPUT -p tcp --destination-port 11211 -j DROP
+/sbin/service iptables save
+service iptables status
+service iptables restart
+service memcached status
+service memcached restart
+/sbin/iptables -A INPUT -p tcp --destination-port 11211 -j ACCEPT
+/sbin/service iptables save
+service iptables restart
+/sbin/iptables -A OUTPUT -p tcp --destination-port 11211 -j ACCEPT
+service iptables stop
+whereis iptables
+service iptables restart
+service iptables status
+service iptables restart
+service iptables status
+iptables -L
+/sbin/iptables -A OUTPUT -p tcp --destination-port 11211 -j REJECT
+/sbin/iptables -A INPUT -p tcp --destination-port 11211 -j REJECT
+/sbin/service iptables save
+service iptables restart
+/sbin/iptables -A INPUT -p tcp --destination-port 11211 -j ACCEPT
+service iptables restart
+service iptables stop
+cd /etc/sysconfig/
+ll
+vi iptables
+service iptables restart
+ifconfig
+/sbin/iptables -A INPUT -p tcp -s ! 127.0.0.
+/sbin/iptables -A INPUT -p tcp -s ! 127.0.0.1 --dport 11211 -j DROP
+cd /root
+pwd
+clear
+/sbin/iptables -A INPUT -p tcp -i lo -s ! 127.0.0.1 --dport 11211 -j DROP
+iptables -A INPUT -p tcp -s localhost --dport 11211 -j ACCEPT
+/sbin/iptables -A INPUT -p tcp -s localhost --dport 11211 -j ACCEPT
+/sbin/service iptables save
+service iptables restart
+iptables -L
+vi /etc/sysconfig/iptables
+service iptables restart
+clear
+iptables -L
+vi /etc/sysconfig/iptables
+iptables -L
+/sbin/iptables -A INPUT -p udp -s localhost --dport 11211 -j ACCEPT
+/sbin/iptables -A INPUT -p UDP -s localhost --dport 11211 -j ACCEPT
+service iptables restart
+iptables -L
+/sbin/iptables -A INPUT -p UDP -s localhost --dport 11211 -j ACCEPT
+/sbin/service iptables save
+service iptables restart
+iptables -L
+vi /etc/sysconfig/iptables
+service iptables restart
+service iptables status
+vi /etc/sysconfig/iptables
+service iptables status
+service iptables restart
+vi /etc/sysconfig/iptables
+service iptables restart
+iptables-restore
+iptables-restore -h
+iptables -L
+clear
+iptables -L
+/sbin/service iptables save
+/sbin/service iptables restart
+service iptables restart
+service iptables status
+vi /etc/sysconfig/iptables
+history
+/sbin/iptables -A INPUT -p tcp -s localhost --dport 11211 -j ACCEPT
+/sbin/iptables -A INPUT -p UDP -s localhost --dport 11211 -j ACCEPT
+/sbin/service iptables save
+service iptables restart
+iptables -L
+/sbin/iptables -A INPUT -p TCP -s localhost --dport 11211 -j ACCEPT
+/sbin/service iptables save
+service iptables restart
+iptables -L
+vi /etc/sysconfig/iptables
+/sbin/iptables -A INPUT -p UDP -s ! localhost --dport 11211 -j DROP
+clear
+/sbin/iptables -A INPUT -p UDP --dport 11211 -j DROP
+/sbin/iptables -A INPUT -p udp --dport 11211 -j DROP
+/sbin/service iptables save
+service iptables restart
+iptables -L
+apachectl configtest
+ls /etc/httpd/
+cd /etc/httpd/
+ls
+cd conf
+ls
+vi httpd.conf 
+ls
+cd ..
+ls
+ls conf.d/
+vi conf.d/ssl.conf
+ls
+cd ssl/
+ll
+ls
+clear
+ls
+cd ..
+ls
+ls conf
+ls conf.d/
+cd ssl/
+ls
+cd .
+cd ..
+ls
+cd conf.d/
+ls
+vi ssl.conf
+ls
+iptables -L
+clear
+ls
+cd ..
+ls
+cd conf
+ls
+vi httpd.conf 
+ls
+cd ..
+ls
+cd conf.d/
+ls
+ls /etc/httpd/ssl/
+ls
+vi ssl.conf
+who
+exit
+/usr/bin/vmware-uninstall-tools.pl
+mkdir /tmp/cd
+mount /dev/cdrom /tmp/cd
+mkdir /tmp/ext
+cd /tmp/ext
+tar -xzvf /tmp/cd/VMwareTools-10.0.9-3917699.tar.gz 
+cd vmware-tools-distrib/
+./vmware-install.pl
+cd  
+umount /tmp/cd
+rm -rf /tmp/cd
+rm -rf /tmp/ext
+exit
+clear
+exit

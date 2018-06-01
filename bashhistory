@@ -1,0 +1,320 @@
+init 0
+cd /etc/sysconfig/network-scripts/
+ls
+vi ifcfg-ens192
+service network restart
+passwd
+lsblk
+fdisk /dev/sdb
+lsblk
+df -T
+mkfs.xfs /dev/sdb1
+pvcreate /dev/sdb1
+lsblk
+vgextend centos /dev/sdb1
+vgs
+lvextend -l +100%FREE /dev/centos/lv_root
+lvextend -l +100%FREE /dev/centos/root
+lsblk
+xfs_growfs /dev/centos/root 
+lsblk
+df -T
+df -kh
+passwd ctrl4c
+hostnamectl set-hostname SomImaging59899
+hostname
+yum update
+ wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
+yum update
+sudo yum install mysql-server
+sudo systemctl start mysqld
+sudo mysql_secure_installation
+mysql
+mysqladmin -u root -p shutdown
+service mysqld start
+service mysql start
+mysql -u root -p
+service mysql start
+cat /etc/*release
+systemctl status mysqld
+rpm -qa | grep mysql
+mysql -u root -p
+systemctl stop mysqld
+systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+systemctl start mysqld
+mysql -u root
+mysql -u root -p
+mysql -u root
+mysql -u root -p
+mysql -u root
+mysql -u root -p
+systemctl stop mysqld
+systemctl start mysqld
+mysql -u root -p
+mysqld_safe reset root password
+/etc/init.d/mysql stop
+systemctl stop mysqld
+systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+systemctl start mysqld
+mysql -u root
+mysql -u root -p
+systemctl start mysqld
+mysql -u root -p
+systemctl stop mysqld
+systemctl unset-environment MYSQLD_OPTS
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Mysql@123';
+systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Mysql@123';
+USER 'root'@'localhost' IDENTIFIED BY 'Mysql@123';
+systemctl start mysqld
+mysql -u root
+systemctl stop mysqld
+systemctl unset-environment MYSQLD_OPTS
+systemctl start mysqld
+mysql -u root -p
+systemctl stop mysqld
+systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+systemctl start mysqld
+mysql -u root
+systemctl stop mysqld
+systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+systemctl start mysqld
+mysql -u root
+service mysqld stop
+service mysql stop
+mysqld_safe --skip-grant-tables &
+vi /etc/zabbix/zabbix_agentd.conf
+service zabbix-agent restart
+csf
+iptables -A INPUT -p tcp -s 43.242.124.82 --dport 10050 -j ACCEPT
+service zabbix-agent status
+mysql -u root -p
+nproc
+free -m
+lsblk
+cat /etc/*redhat-release
+ls
+lsb_release -a
+cat /etc/redhat-release 
+clear
+df
+clear
+history
+df -Th
+clear
+history
+clear
+cd /etc/sysconfig/network-scripts/
+ls
+ll
+vi ifcfg-ens192 
+lsblk
+cls
+clear
+yum
+yum --version
+yum info yum
+yum info git
+yum info httpd
+php
+php --version
+cleqar
+clear
+mysql -V
+mysql --version
+phpmyadmin --version
+yum info memcached
+cleare
+clear
+yum info phpMyAdmin
+clear
+ls
+ls /
+hostname
+clear
+cd /etc/sysconfig/network-scripts/
+ls
+cd /etc/sysconfig/network-scripts/
+ls
+vi ifcfg-lo
+vi ifcfg-ens192 
+domainname
+clear
+domainname
+history
+cat /etc/redhat-release 
+lsb_release -a
+clear
+git
+clear
+mysql -V
+clear
+mysql --version
+telnet
+php
+clear
+php -V
+clear
+php -i
+clear
+php -m
+php -m | grep memcache
+yum info memcached
+yum install memcached
+systemctl status memcached
+systemctl start memcached
+systemctl status memcached
+clear
+memstat --servers="127.0.0.1"
+firewall-cmd --permanent --new-zone=memcached
+php -m | grep memcache
+systemctl status memcached
+php -m | grep memcached
+iptables status
+iptables -h
+service iptables status
+firewall-cmd
+firewall-cmd --permanent --new-zone=memcached
+systemctl status firewalld
+systemctl start firewalld
+systemctl enable firewalld
+systemctl start firewalld
+systemctl unmask firewalld
+systemctl start firewalld
+netstat -ntlp
+clear
+uptime 
+iptables -L
+clera
+clear
+vi /etc/sysconfig/iptables
+:q!
+q!
+clear
+cat /etc/issue
+cat /etc/redhat-release 
+systemctl status firewalld.service 
+systemctl status iptables.service 
+systemctl stop iptables.service 
+systemctl status iptables.service 
+systemctl status firewalld.service 
+systemctl stop firewalld.service 
+csf
+ip r l 
+csf -x
+exit
+pwd
+cd /var/www/html/
+ls
+ls -l
+mkdir datathon
+ls -l
+
+git clone https://github.com/somnetics/datathon.git
+ls -l
+cd datathon/
+ls
+cd application/
+ls
+exit
+clear
+systemctl status firewalld
+clear
+history 
+cat /etc/*se
+iptables -L
+systemctl status firewalld.service 
+csf
+systemctl status csf
+firewall-cmd --list-all
+firewall-cmd --list-all-zones | less
+firewall-cmd --zone=public --list-ports
+firewall-cmd --zone=public --list-services
+firewall-cmd --permanent --zone=public --add-port=2232/tcp
+cd /etc/sysconfig/
+ls -la
+vi firewalld 
+cd /var/www/html/
+mkdir bengal_athon
+cd bengal_athon/
+git clone https://github.com/somnetics/bengal_athon.git
+firewall-cmd --permanent --zone=public --add-port=2232/tcp
+systemctl start firewalld.service
+firewall-cmd --permanent --zone=public --add-port=2232/tcp
+systemctl status firewalld.service 
+netstat -ntlp
+firewall-cmd --zone=public --list-services
+vi /etc/sysctl.conf 
+firewall-cmd --get-active-zones
+firewall-cmd --permanent --zone=public --list-all
+iptables -L
+systemctl restart firewalld.service 
+firewall-cmd --permanent --zone=public --list-all
+netstat -ntlp
+firewall-cmd --permanent --zone=public --add-port=3306/tcp
+systemctl restart firewalld.service 
+firewall-cmd --permanent --zone=public --list-all
+netstat -ntlp
+firewall-cmd --permanent --zone=public --add-port=11211/tcp
+systemctl restart firewalld.service 
+firewall-cmd --permanent --zone=public --add-port=10050/tcp
+systemctl restart firewalld.service 
+firewall-cmd --permanent --zone=public --add-port=111/tcp
+systemctl restart firewalld.service 
+firewall-cmd --permanent --zone=public --list-all
+systemctl status firewalld.service 
+ifconfig 
+systemctl status firewalld.service
+systemctl status firewa1ld.s
+systemctl status firewa1ld.service
+systemctl status firewalld.service
+systemctl status firewa1ld.service
+systemctl status firewalld.service
+history
+clear
+systemctl status firewa1ld.service
+firewall-cmd --permanent --zone=public --list-all
+clear
+who
+csf -L
+csf -l
+iptables -L
+clear
+history
+clear
+service httpd status
+service httpd start
+clear
+systemctl enable httpd.service
+ls /etc/httpd/
+
+cd /etc/httpd/
+ls
+ls conf
+ls conf.
+ls conf.d/
+cd /conf/
+clear
+ls
+ll
+cd conf
+ls
+vi httpd.conf 
+clear
+systemctl restart httpd.service
+systemctl status httpd.service
+apachectl configtest
+clear
+cd ..
+clear
+cd $HOME
+clear
+ls /var/www/html/
+history
+clear
+yum install epel-releasew
+yum install epel-release
+yum install phpmyadmin
+vim
+
