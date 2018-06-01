@@ -1,0 +1,30 @@
+1.
+Problem: 
+Notepad++ is not coming on Ubuntu right click context menu:
+	I copied notepad++.desktop from /home/saumyadip/.local/share/applications/wine/Programs
+	and paste it /home/saumyadip/.local/share/applications/ here 
+	
+	Launch with wine loader
+	Solved.
+---------------------------------------------------------------------------------------------------	
+2. 
+Problem: Input Signal Out Of Range
+            Change Settings to 1366x768 60Hz
+          
+Solution:
+Boot computer from safe mode (press f8 while booting)
+open msconfig from run.
+go to boot menu and select "Base Video" 
+restart.
+All done.
+-----------------------------------------------------------------------------------------------------------------------
+3.
+After running "rpm -e --nodeps python" yum is not working centos 6.9
+Problem:
+ while type yum on terminal it says: -bash: /usr/bin/yum: /usr/bin/python: bad interpreter: no such file or directory
+
+Solution: Download
+wget http://mirror.centos.org/centos/6.9/os/x86_64/Packages/python-2.6.6-66.el6_8.x86_64.rpm
+rpm -ivh python-2.6.6-66.el6_8.x86_64.rpm
+type yum on terminal will shows yum options..
+-------------------------------------------------------------------------------------------------------------------------
