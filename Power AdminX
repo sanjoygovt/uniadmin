@@ -1,0 +1,236 @@
+What we do is: Install, remove, upgrade, verify, query and fixing
+
+Get System Info: Ubuntu/Centos
+==========================================================
+lsb_release -a  : To check OS details
+uname -a        : To check kernel version & architecture
+cat /etc/redhat-release : To check OS version
+===========================================================
+Time & Date:
+date  : To check current date & time
+hwclock : To check current date & time
+==============================================================
+User Management:
+useradd -m new_username      :create a new user
+passwd new_username          :set password for new username
+usermod -a -g sudo username     :User can access sudo
+cat /etc/passwd   :see all user details
+cat /etc/shadow   :find all groups 
+cut -d: -f1 /etc/passwd  :show all users
+awk -F':' '{ print $1}' /etc/passwd :show all users
+chown root:username /dir/dir :own a directory
+groups  :show which group
+
+=============================================================================================
+Package Management: CentOS
+everything can be found for centos: http://mirror.centos.org/centos/6.9/os/x86_64/Packages/
+rpm -i rpmfilename.rpm  :To install a rpm file
+rpm -ivh rpmfilename.rpm  : Install rpm file with hash and verbose
+rpm -ql package_name  :To find locations of installed packages
+rpm -qi package_name  :To find all details of installed packages
+rpm -e package_name   :To remove a package
+rpm --erase package_name  :To remove a package
+rpm -e --nodeps python : will remove all deps silently
+rpm -ev --nodeps package_name : remove without dependencies
+
+Yellow Dog Updater, Modifier
+-----------------------------
+yum info package_name :To find info about package
+yum install package_name :To install a package 
+yum remove package_name :To remove a package
+yum check-update :To update yum
+yum update package_name :Update a specific packages 
+yum update :To update system
+yum search package_name :To search a package
+yum list all :To find all yum packages
+yum repolist : Show all repolist
+yum repolist -v
+yum history list all
+yum history stats
+/etc/yum.conf   :yum config file
+yum-config-manager
+yum-config-manager --add-repo https://www.pqr.com/filename.repo
+yum-config-manager --enable repository 
+yum-config-manager --enable repository
+
+Package Management: Ubuntu
+dpkg -i filename.deb  :Installing a .deb files
+dpkg-reconfigure -a
+dpkg --configure -a
+apt install package_name
+apt-get install package_name :Installing a package
+apt autoremove  :autoremove all unnecessary files
+apt --fix-missing install
+apt-get install -f
+apt-get update --fix-missing
+================================================================================
+Basic Commands:
+cd :go to another directory
+ls :list files
+ls -ld .* :To find .filename file
+ls -la :To show all & hidden files
+pwd :show which directory you are working
+mkdir :Create a folder/directory
+rmdir :Remove/delete a folder/directory
+rm -rf filename :Force delete
+rm -rf *.(file extenstion)
+touch
+cat
+cd $HOME :go to home directory
+cp : copying a file
+scp localfile username@hostname:remotefile :to send a dir/file to another directory
+sftp username@hostname
+ln -s source destination  : create sysbolic link for a directory or file
+ln -s ~/Documents/Admin\ Manager/ /var/adminzone/
+clear : clear the terminal screen
+who : find who is connected with my host
+whoami : find who is me?
+w  : details of user connection
+which :find the file location
+whereis :find the file location
+locate :find all the file location
+find 
+top :to show process status
+ll :detailed directory
+more
+less
+history :to show all history
+history -c :clean history from terminal
+chmod :changing permission
+chmod -R 777 directory_path
+env
+export
+domainname
+hostname :shows hostname
+grep
+dmidecode -t system :bios version
+dmidecode -t bios
+dmidecode -t processor
+============================================================================
+Network Administration:
+----------------------------------------------------------------------------
+ifconfig   : ip address details
+ifconfig -a
+ip address
+ip a
+ping ipname/domainname
+netstat -at: all tcp connections
+netstat -antp | grep ESTABLISHED : Find all Established connections
+netstat -pnlt | grep ':80' :check a specific port
+netstat -lx : all listening connections
+netstat -lt : all tcp listening ports
+netstat -lu : all udp listening ports
+netstat -s  : statistics by protocol
+netstat -tp : service name with PID
+netstat -ac 5 | grep tcp : promiscuous mode will refresh in every seconds
+netstat --statistics --raw : raw statistics by protocol like ip
+netstat -n | more
+netstat -sp 45.114.142.178
+netstat -tnlp
+traceroute ip
+======================================
+Disk Management:
+du
+df -h
+free -m
+fdisk -l
+mount /dev/cdrom /tmp/cd
+unmount /tmp/cd
+========================================================================
+Firewall/Iptables Management:
+iptables location:
+/etc/sysconfig/iptables (CentOS)
+iptables -L
+vi /etc/sysconfig/iptables
+/sbin/service iptables save
+/sbin/service iptables restart
+Example:
+iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 2232 -j ACCEPT :Allowing 2232 port
+iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT :Allows port 8080
+
+firewall-cmd --list-all 
+firewall-cmd --zone=public --add-port=2233/tcp : adding rule
+firewall-cmd --permanent --zone=public --add-service=(service name)
+firewall-cmd --reload
+=========================================================================
+Service management:
+service --status-all    : To list all services in the system
+service service_name status/start/stop :Service handling
+
+systemctl start/stop/status service_name :Service handling
+systemctl reload servicename.service
+systemctl enable servicename.service
+systemctl disable servicename.service
+
+chkconfig service_name on  :To start a service on startup
+chkconfig service_name off
+chkconfig --list
+systemctl list-units --type service
+systemctl list-units --type service --all
+systemctl list-unit-files --type service
+
+=======================================================================
+Process Management:
+ps -A  :List all processes
+ps -auxf
+ps -auxf | grep demo
+top
+kill -9 pidno :To kill a process
+pidof processname
+lsof -p idname
+(pkill,kill -SIGTERM 3139,killall service_name,
+=======================================================================
+Cron jobs management:
+crontab -l  :view cron jobs
+crontab -e  :edit cron jobs
+=======================================================================
+Root Access:
+sudo -i : turn to root 
+su username
+su -   :bash shell
+=============================================================================
+Archive File Management:
+tar -xvf tar.gzfile  : extract a archive file (tar.gz, .tgz, .tar.bz2, etc.)
+zip -r filename.zip  : archive a folder/directory
+unzip zipfilename    : extract zip file
+=============================================================================
+Apache server management:
+apachectl status
+apachectl start
+service httpd status :To check apache httpd service status
+apachectl configtest :Configuration test
+apachectl graceful
+service httpd graceful
+service httpd configtest
+/etc/init.d/apache2 reload
+/etc/init.d/httpd reload
+/var/log/apache2/error.log
+/var/log/httpd/error_log
+/var/log/apache2/access.log
+/var/log/httpd/access_log
+
+/etc/httpd/conf :Location httpd config file
+/etc/httpd/conf/conf.d :Location httpd config file
+
+==============================================================================
+Setting default python:
+python 2.6 to 3.6
+alias python=/usr/local/bin/python3.6
+==============================================================================
+Connect two pc using netcat:
+1st pc: nc -l 1234
+2nd pc: nc 192.168.0.0 1234
+==============================================================================
+Hardware Information:
+lsusb :list usb installed
+lshw  :list hardware information
+lscpu :Get cpu info
+lsblk :list mounted/partition disk
+lsscsi :list disk
+dmesg :to show what is hardware doing
+==============================================================================
+Automatic web request in every 1 minute:
+
+*/1 * * * * curl http://103.231.8.182/imailservice/service/send
+
+==============================================================================
