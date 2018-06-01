@@ -1,0 +1,128 @@
+Tata Server Deployment:
+=========================================================================
+Server Details:
+-------------------------------------------------------------------------
+cat /etc/redhat-release 
+CentOS Linux release 7.5.1804 (Core) 
+=========================================================================
+Connecting to server:
+-------------------------------------------------------------------------
+ssh root@192.168.0.130
+password: r$0^&0*/$t1@@!a
+netstat -tulpn | grep sshd
+-------------------------------------------------------------------------
+PORT     STATE  SERVICE    VERSION
+22/tcp   open   ssh        OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 2048 f7:df:86:76:1e:d0:c5:14:13:5d:03:a2:f9:6c:f4:e8 (RSA)
+|_256 2f:92:2d:7d:10:28:c8:89:64:70:0e:89:4a:5a:26:b2 (ECDSA)
+80/tcp   closed http
+443/tcp  closed https
+8080/tcp closed http-proxy
+=========================================================================
+Users:
+-------------------------------------------------------------------------
+Username: Administrator
+password: tt$$admin (current: tt$$admin)
+
+root password: r$0^&0*/$t1@@!a (current: r$0^&0*/$t1@@!a)
+==========================================================================
+
+Packages Installed:
+==========================================================================
+Java: 
+--------------------------------------------------------------------------
+java -version
+openjdk version "1.8.0_171"
+==========================================================================
+Python3.6:
+--------------------------------------------------------------------------
+https://www.rosehosting.com/blog/how-to-install-python-3-6-4-on-centos-7/
+yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+yum update
+yum install -y python36u python36u-libs python36u-devel python36u-pip
+python3.6 -V
+Python 3.6.5
+===========================================================================
+node.js : v10.2.1 (latest):
+---------------------------------------------------------------------------
+https://nodejs.org/en/download/package-manager/
+curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+yum install -y nodejs
+---------------------------------------------------------------------------
+https://docs.npmjs.com/troubleshooting/try-the-latest-stable-version-of-npm
+npm install -g npm@next
+npm : 6.1.0 (latest)
+============================================================================
+mongoDB:
+----------------------------------------------------------------------------
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
+Create a /etc/yum.repos.d/mongodb-org-3.6.repo:
+-----------------------------------------------------------
+[mongodb-org-3.6]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc
+---------------------------------------------------------------------------------------------------------------------------------------
+sudo yum install -y mongodb-org-3.6.4 mongodb-org-server-3.6.4 mongodb-org-shell-3.6.4 mongodb-org-mongos-3.6.4 mongodb-org-tools-3.6.4
+service mongod start
+service mongod stop
+service mongod restart
+mongo --host 127.0.0.1:27017
+netstat -pnlt | grep :27017
+
+https://docs.mongodb.com/manual/tutorial/enable-authentication/
+> use admin
+switched to db admin
+> db.createUser(
+... {
+... user: "mongo_admin",
+... pwd: "admin_mongo",
+... roles:[{role: "userAdminAnyDatabase", db: "admin"}]
+... }
+... )
+
+
+mongo --port 27017 -u "mongo_admin" -p "admin_mongo" --authenticationDatabase "admin"
+mongo --port 27017
+=================================================================================================================
+Elasticsearch:
+https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.4.rpm
+rpm --install elasticsearch-6.2.4.rpm
+systemctl start elasticsearch.service
+chkconfig --add elasticsearch
+/bin/systemctl daemon-reload
+/bin/systemctl enable elasticsearch.service
+curl -X GET "localhost:9200/"
+==================================================================================================================
+git:
+----------------------------------------------------------------------------
+wget https://github.com/git/git/archive/v2.17.0.tar.gz
+tar -zxf v2.17.0.tar.gz 
+cd git-2.17.0/
+yum install autoconf
+make configure
+yum groupinstall 'Development Tools'
+yum install openssl-devel curl-devel expat-devel gettext-devel zlib-devel
+./configure --prefix=/usr/local/git all
+make install
+export PATH=$PATH:/usr/local/bin/git
+git version 2.17.0
+==================================================================================
+Protocols:
+----------------------------------------------------------------------------------
+Ports: 80(8080),443(4433),22,27017,9200
+
+Firewall Configuration:
+----------------------------------------------------------------------------------
+https://serverfault.com/questions/626521/centos-7-save-iptables-settings
+systemctl status firewalld.service
+iptables -L
+firewall-cmd --zone=public --add-port=22/tcp --permanent
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+firewall-cmd --zone=public --add-port=8080/tcp --permanent
+firewall-cmd --zone=public --add-port=443/tcp --permanent
+firewall-cmd --zone=public --add-port=4433/tcp --permanent
+---------------------------------------------------------------------------------- 

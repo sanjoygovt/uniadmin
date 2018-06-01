@@ -1,0 +1,72 @@
+Getting Network in linux::troubleshooting:
+============================================================================
+============================================================================
+ifconfig (interface configurator) //local network interface
+iwconfig //wireless network interface
+ifconfig eth0
+ifconfig eth0 192.168.0.5 netmask 255.255.255.0  //assiging ip
+ifconfig eth0 - promisc //Set Interface in Promiscuous mode
+----------------------------------------------------------------------------
+ifup eth0  //enable eth0
+ifdown eth0 //disable eth0
+----------------------------------------------------------------------------
+ping 8.8.8.8
+ping www.ipower.in
+--------------------------------------------------------------------------
+dig (domain information grouper) // interrogating DNS name
+dig amazon.in
+----------------------------------------------------------------------------
+host -a amazon.in //simmilar like dig for interrogating DNS name
+----------------------------------------------------------------------------
+telnet www.amazon.in 443  //connect destination host:port via telnet protocol
+-------------------------------------------------------------------------------
+scp //secure copy files to and from another host in the networke
+scp $filename user@targethost:/$path
+-----------------------------------------------------------------------------
+w  // prints a summary of the current activity on the system
+--------------------------------------------------------------------------
+traceroute 192.168.124.254 //number of hops to reach destination
+----------------------------------------------------------------------------
+nslookup www.amazon.in //dns related query
+----------------------------------------------------------------------------
+netstat //network statistic
+netstat -at //all tcp connections
+netstat -antp | grep ESTABLISHED //Find all Established connections
+netstat -pnlt | grep ':80' //check a specific port
+netstat -lx //all listening connections
+netstat -lt //all tcp listening ports
+netstat -lu //all udp listening ports
+netstat -s  //statistics by protocol
+netstat -tp //service name with PID
+netstat -ac 5 | grep tcp //promiscuous mode will refresh in every seconds
+netstat --statistics --raw //raw statistics by protocol like ip
+netstat -n | more
+netstat -sp 45.114.142.178
+netstat -tnlp
+------------------------------------------------------------------------------
+route //ip routing table
+route add -net 10.10.10.0/24 gw 192.168.0.1 //route adding
+route del -net 10.10.0.5/24 gw 192.168.0.1 //route deleting
+route add default gw 192.168.0.1 //add default gateway
+-------------------------------------------------------------------------------
+arp -e // view/add arp table
+--------------------------------------------------------------------------------
+ethtool eth0 //view, setting speed and duplex of your Network Interface Card(NIC)
+/etc/sysconfig/network-scripts/   //list all network scripts
+---------------------------------------------------------------------------------
+domainname -a //list all localhost domain
+---------------------------------------------------------------------------------
+hostname // To identify in a network
+---------------------------------------------------------------------------------
+system-config-network // Dos based GUI IP Address, Gateway and DNS
+---------------------------------------------------------------------------------
+mtr (My traceroute) //Realtime Tracing
+mtr amazon.in/hostname
+----------------------------------------------------------------------------
+ss (Socket Statistics)
+ss | less // gets its information directly from the kernel
+ss -t4 state established // To list all established TCP sockets for ipv4
+---------------------------------------------------------------------------
+tcpdump //packet analysis
+tcpdump -i eth1 tcp/udp
+tcpdump -i eth1 port 80

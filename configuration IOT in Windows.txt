@@ -1,0 +1,73 @@
+Configuration tested in  Windows 10 Pro 64 bit:
+----------------------------------------------------
+to get windows info:
+wmic os get caption
+wmic os get osarchitecture
+----------------------------------------------------
+1. Install node.js 
+node-v9.11.1-x64.msi  
+check node version:
+node --version
+v9.11.1
+type "node" in commandprompt
+
+check npm:
+npm --version
+5.6.0
+-------------------------------------------------------------------
+2. run index.js from based on path (E:\IIoT-Tata\serial\index.js)
+node index.js
+installed dependencies:
+npm install bindings
+npm install mongo-client
+npm install mongodb
+npm install serialport
+npm install socket.io
+npm install utf8
+-------------------------------------------------------------------
+
+3. install python 3.6
+python-3.6.5-amd64.exe
+set environment path.
+-------------------------------------------------------------------
+4. Configure MongoDB:
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
+mongodb-win32-x86_64-2008plus-ssl-3.6.4-signed.msi
+nosqlbooster4mongo-4.5.2.exe
+
+mkdir c:\data\db
+mkdir c:\data\log
+
+*create file as mongod.cfg: 
+C:\Program Files\MongoDB\Server\3.6\mongod.cfg
+[
+systemLog:
+    destination: file
+    path: c:\data\log\mongod.log
+storage:
+    dbPath: c:\data\db
+]
+
+create service:
+"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --config "C:\Program Files\MongoDB\Server\3.6\mongod.cfg" --install
+
+
+mongo shell:
+"C:\Program Files\MongoDB\Server\3.6\bin\mongo.exe"
+
+To start/stop service:
+net start/stop MongoDB
+"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe"
+
+To delete MongoDB:
+sc.exe delete MongoDB
+-----------------------------------------------------------------------------------------------------------------------------
+To create Desktop App:
+Goto chrome settings> more tools>Add to Desktop
+----------------------------------------------------------------------------------------
+To start server on startup:
+shell:startup
+Label: startupserver.bat (node index.js)
+Browser: IOT Dashboard
+----------------------------------------------------------------------------------------

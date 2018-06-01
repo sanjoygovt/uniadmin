@@ -1,0 +1,324 @@
+    1  fdisk -l
+    2  df -Th
+    3  clear
+    4  vi /etc/pam.d/gdm
+    5  vi /etc/pam.d/gdm-password
+    6  cd /etc/pam.d/
+    7  ls
+    8  vi passwd
+    9  vi gdm-password
+   10  ls
+   11  /etc/init.d/network restart
+   12  ping 192.9.200.150
+   13  passwd
+   14  useradd user
+   15  passwd user
+   16  clear
+   17  vim /etc/sysconfig/iptables
+   18  cd /etc/sysconfig/network-scripts/
+   19  ls
+   20  vi ifcfg-eth0
+   21  cd
+   22  clear
+   23  df -Th
+   24  clear
+   25  vim /etc/yum.conf
+   26  yum install httpd*
+   27  yum update
+   28  exit
+   29  yum update
+   30  clear
+   31  service httpd start
+   32  chkconfig httpd on
+   33  cleaer
+   34  clear
+   35  yum update
+   36  clear
+   37  yum update
+   38  yum clean all
+   39  init 6
+   40  clear
+   41  yum update
+   42  clear
+   43  vi /etc/sysconfig/selinux
+   44  sestatus
+   45  clear
+   46  init 6
+   47  cd /home/
+   48  ls
+   49  cd
+   50  userdel test
+   51  cd /home/
+   52  ls
+   53  cd
+   54  su - test
+   55  clear
+   56  exit
+   57  cd /home/
+   58  ls
+   59  cat /etc/passwd
+   60  cd
+   61  clear
+   62  sestatus
+   63  clear
+   64  iptables -L
+   65  yum install mysql mysql-server -y
+   66  service mysqld restart
+   67  chkconfig mysqld on
+   68  mysql_secure_installation
+   69  yum install php -y
+   70  vi /var/www/html/testphp.php
+   71  service httpd restart
+   72  yum install php-mysql -y
+   73  wget http://epel.mirror.net.in/epel/6/i386/epel-release-6-8.noarch.rpm
+   74  rpm -Uvh epel-release-6-8.noarch.rpm
+   75  yum repolist
+   76  yum install phpmyadmin -y
+   77  vi /etc/httpd/conf.d/phpMyAdmin.conf
+   78  cd /usr/share/
+   79  ls
+   80  cd
+   81  vim /etc/
+   82  cd /etc/
+   83  ls
+   84  cd phpMyAdmin/
+   85  ls
+   86  cd /usr/share/
+   87  cd phpMyAdmin/
+   88  ls
+   89  vi config.sample.inc.php
+   90  cd
+   91  cd /etc/phpMyAdmin/
+   92  ls
+   93  vim config.inc.php
+   94  cd /usr/share/
+   95  phpMyAdmin/
+   96  cd phpMyAdmin
+   97  vim config.sample.inc.php
+   98  vim /etc/httpd/conf.d/phpMyAdmin.conf
+   99  service httpd restart
+  100  service mysqld restart
+  101  gedit /etc/sysconfig/iptables
+  102  /etc/init.d/iptables restart
+  103  cd /var/www/
+  104  ll
+  105  chmod -R 755 html/
+  106  chown user.user -R html/
+  107  exit
+  108  service mysqld stop
+  109  mysqld_safe --skip-grant-tables &
+  110  mysql -u root;
+  111  use mysql;update user set password=PASSWORD("123456") where User='root';
+  112  mysqld_safe --skip-grant-tables &
+  113  mysql -u root;use mysql;update user set password=PASSWORD("123456") where User='root';
+  114  mysqld_safe --skip-grant-tables &
+  115  mysql -u root;use mysql;
+  116  service mysqld restart
+  117  mysql -u root;use mysql;
+  118  service mysqld stop
+  119  service mysqld restart
+  120  mysqld_safe --skip-grant-tables & mysql -u root;
+  121  use mysql;
+  122  service mysqld stop
+  123  mysqld_safe --skip-grant-tables & mysql -u root;
+  124  update user set password=PASSWORD("123456") where User='root';
+  125  exit
+  126  service mysqld stop
+  127  service mysqld start
+  128  exit
+  129  vi /etc/httpd/conf/httpd.conf
+  130  service httpd restart
+  131  vi /etc/httpd/conf/httpd.conf
+  132  service httpd restart
+  133  exit
+  134  service mysqd restart
+  135  service mysqld restart
+  136  cd /var/www/html/
+  137  chmod -R 755 idoc/
+  138  chmod -R 777 idoc/documents/
+  139  chmod -R 777 idoc/plugins/xpdf/
+  140  chmod -R 777 idoc/css/photo/
+  141  exit
+  142  cd /var/lib/mysql/mysql
+  143  ll
+  144  chown mysql.mysql user.*
+  145  ll
+  146  chmod 770 user.*
+  147  ll
+  148  chmod 660 user.*
+  149  ll
+  150  service mysqld restart
+  151  exit
+  152  getsebool -a | grep exec
+  153  getenforce
+  154  setenforce --help
+  155  setenforce 1
+  156  setenforce 0
+  157  vi /etc/selinux/config
+  158  cls
+  159  clear
+  160  init 0
+  161  getsebool -a | grep exec
+  162  setsebool -P allow_guest_exec_content=
+  163  getsebool -a | grep exec
+  164  setsebool -P httpd_execmem=1
+  165  setsebool -P httpd_ssi_exec=1
+  166  setsebool -P httpd_tmp_exec=1
+  167  service selinux status
+  168  setbool -P httpd_disable_trans=1
+  169  setsebool -P httpd_disable_trans=1
+  170  getsebool -a | grep httpd
+  171  service httpd restart
+  172  chcon -Rv --type=httpd_user_content_rw_t /var/www/html/idoc/
+  173  service httpd restart
+  174  ls /var/www/html//idoc
+  175  ll /var/www/html//idoc
+  176  ll /var/www/html//idoc/documents
+  177  exit
+  178  ll
+  179  cd /var/www/html/idoc/
+  180  ll
+  181  cd plugins/
+  182  ll
+  183  cd xpdf/
+  184  ll
+  185  cd ..
+  186  cd xpdf/
+  187  ll
+  188  ll /var/www/html/idoc/documents/
+  189  ll
+  190  pfdinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a0-4aff6beb5bee.pdf
+  191  /var/www/html/idoc/plugins/xpdf/pfdinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a                                                                      0-4aff6beb5bee.pdf
+  192  ll
+  193  pdfinfo
+  194  pdfinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a0-4aff6beb5bee.pdf
+  195  /var/www/html/idoc/plugins/xpdf/pdfinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a                                                                      0-4aff6beb5bee.pdf
+  196  /var/www/html/idoc/plugins/xpdf/pdfinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a                                                                      0-4aff6beb5bee.pdf
+  197  var/www/html/idoc/plugins/xpdf/pdfinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a0                                                                      -4aff6beb5bee.pdf
+  198  yum search pdfinfo
+  199  clear
+  200  var/www/html/idoc/plugins/xpdf/.pdfinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a                                                                      0-4aff6beb5bee.pdf
+  201  var/www/html/idoc/plugins/xpdf/pdfinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a0                                                                      -4aff6beb5bee.pdf
+  202  yum search xpdf
+  203  yum update xpdf
+  204  yum install xpdf
+  205  xpdf
+  206  pdfinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a0-4aff6beb5bee.pdf
+  207  cd ..
+  208  ll
+  209  pdfinfo /var/www/html/idoc/documents/16439d58-508a-43f7-84a0-4aff6beb5bee.pdf
+  210  vi /var/www/html/idoc//plugins/xpdf/xpdf.class.php
+  211  exit
+  212  poweroff
+  213  init 0
+  214  boot
+  215  startup
+  216  reboot
+  217  free
+  218  df -th
+  219  df -TH
+  220  mem
+  221  exit
+  222  cd /var/www/html/
+  223  ls -l
+  224  service httpd restart
+  225  service httpd restart
+  226* service mysqld res
+  227  service httpd status
+  228  apachectl configtest
+  229  clear
+  230  vi /etc/hosts
+  231  whatis httpd
+  232  yum info httpd
+  233  clear
+  234  cd $HOME
+  235  clear
+  236  lsb_release -a
+  237  clear
+  238  cd /etc/yum.repos.d/
+  239  ls
+  240  yum info httpd
+  241  kill -9 27098
+  242  clear
+  243  lsof 27098
+  244  lsof -p 27098
+  245  yum info httpd
+  246  vi /etc/resolv.conf
+  247  yum info httpd
+  248  clear
+  249  lsof -p 27192
+  250  netstat -na | find "27192"
+  251  clear
+  252  yum info httpd
+  253  netstat -na | find "27182"
+  254  netstat -na | find 27182
+  255  kill -9 27182
+  256  clear
+  257  ping google.com
+  258  ping www.google.com
+  259  yum info httpd
+  260  vi /etc/resolv.conf
+  261  clear
+  262  yum info httpd
+  263  kill -9 27232
+  264  clear
+  265  whereis httpd
+  266  yum info httpd
+  267  yum update
+  268  kill -9 27254
+  269  clear
+  270  yum update
+  271  ping 8.8.8.8
+  272  ip route show
+  273  yum update yum
+  274  kill -9 27267
+  275  yum update yum
+  276  clear
+  277  service httpd status
+  278  service httpd start
+  279  cat /etc/resolv.conf
+  280  ping localhost
+  281  clear
+  282  vi /etc/hosts
+  283  yum info httpd
+  284  kill -9 27287
+  285  yum info httpd
+  286  yum update
+  287  kill -9 27327
+  288  yum update
+  289  dig @8.8.8.8 www.google.com
+  290  ifconfig
+  291  ifdown etho && ifup eth0
+  292  ifdown eth0 && ifup eth0
+  293  yum update
+  294  kill -9 27337
+  295  yum update
+  296  vi /etc/sysconfig/network-scripts/ifcfg-eth0
+  297  ifdown eth0 && ifup eth0
+  298  service httpd start
+  299  yum update
+  300  kill -9 27454
+  301  vi /etc/hosts
+  302  ifdown eth0 && ifup eth0
+  303  service httpd restart
+  304  cd /etc/httpd/
+  305  ls
+  306  cd conf
+  307  ls
+  308  vi httpd.conf
+  309  /etc/init.d/apache2 restart
+  310  /etc/init.d/httpd restart
+  311  service httpd status
+  312  service httpd restart
+  313  service httpd start
+  314  apachectl configtest
+  315  ping localhost
+  316  service iptables status
+  317  iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
+  318  /sbin/iptables restart\
+  319  /sbin/iptables restart
+  320  service iptables restart
+  321  apachectl configtest
+  322  service httpd start
+  323  history
+

@@ -1,0 +1,197 @@
+[root@somimaging59899 ~]# history
+    1  init 0
+    2  cd /etc/sysconfig/network-scripts/
+    3  ls
+    4  vi ifcfg-ens192
+    5  service network restart
+    6  passwd
+    7  lsblk
+    8  fdisk /dev/sdb
+    9  lsblk
+   10  df -T
+   11  mkfs.xfs /dev/sdb1
+   12  pvcreate /dev/sdb1
+   13  lsblk
+   14  vgextend centos /dev/sdb1
+   15  vgs
+   16  lvextend -l +100%FREE /dev/centos/lv_root
+   17  lvextend -l +100%FREE /dev/centos/root
+   18  lsblk
+   19  xfs_growfs /dev/centos/root 
+   20  lsblk
+   21  df -T
+   22  df -kh
+   23  passwd ctrl4c
+   24  hostnamectl set-hostname SomImaging59899
+   25  hostname
+   26  yum update
+   27   wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+   28  sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
+   29  yum update
+   30  sudo yum install mysql-server
+   31  sudo systemctl start mysqld
+   32  sudo mysql_secure_installation
+   33  mysql
+   34  mysqladmin -u root -p shutdown
+   35  service mysqld start
+   36  service mysql start
+   37  mysql -u root -p
+   38  service mysql start
+   39  cat /etc/*release
+   40  systemctl status mysqld
+   41  rpm -qa | grep mysql
+   42  mysql -u root -p
+   43  systemctl stop mysqld
+   44  systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+   45  systemctl start mysqld
+   46  mysql -u root
+   47  mysql -u root -p
+   48  mysql -u root
+   49  mysql -u root -p
+   50  mysql -u root
+   51  mysql -u root -p
+   52  systemctl stop mysqld
+   53  systemctl start mysqld
+   54  mysql -u root -p
+   55  mysqld_safe reset root password
+   56  /etc/init.d/mysql stop
+   57  systemctl stop mysqld
+   58  systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+   59  systemctl start mysqld
+   60  mysql -u root
+   61  mysql -u root -p
+   62  systemctl start mysqld
+   63  mysql -u root -p
+   64  systemctl stop mysqld
+   65  systemctl unset-environment MYSQLD_OPTS
+   66  ALTER USER 'root'@'localhost' IDENTIFIED BY 'Mysql@123';
+   67  systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+   68  ALTER USER 'root'@'localhost' IDENTIFIED BY 'Mysql@123';
+   69  USER 'root'@'localhost' IDENTIFIED BY 'Mysql@123';
+   70  systemctl start mysqld
+   71  mysql -u root
+   72  systemctl stop mysqld
+   73  systemctl unset-environment MYSQLD_OPTS
+   74  systemctl start mysqld
+   75  mysql -u root -p
+   76  systemctl stop mysqld
+   77  systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+   78  systemctl start mysqld
+   79  mysql -u root
+   80  systemctl stop mysqld
+   81  systemctl set-environment MYSQLD_OPTS="--skip-grant-tables"
+   82  systemctl start mysqld
+   83  mysql -u root
+   84  service mysqld stop
+   85  service mysql stop
+   86  mysqld_safe --skip-grant-tables &
+   87  vi /etc/zabbix/zabbix_agentd.conf
+   88  service zabbix-agent restart
+   89  csf
+   90  iptables -A INPUT -p tcp -s 43.242.124.82 --dport 10050 -j ACCEPT
+   91  service zabbix-agent status
+   92  mysql -u root -p
+   93  nproc
+   94  free -m
+   95  lsblk
+   96  cat /etc/*redhat-release
+   ==============================================================================
+     176  service iptables status
+  177  firewall-cmd
+  178  firewall-cmd --permanent --new-zone=memcached
+  179  systemctl status firewalld
+  180  systemctl start firewalld
+  181  systemctl enable firewalld
+  182  systemctl start firewalld
+  183  systemctl unmask firewalld
+  184  systemctl start firewalld
+  185  netstat -ntlp
+  186  clear
+  187  uptime 
+  188  iptables -L
+  189  clera
+  190  clear
+  191  vi /etc/sysconfig/iptables
+  192  :q!
+  193  q!
+  194  clear
+  195  cat /etc/issue
+  196  cat /etc/redhat-release 
+  197  systemctl status firewalld.service 
+  198  systemctl status iptables.service 
+  199  systemctl stop iptables.service 
+  200  systemctl status iptables.service 
+  201  systemctl status firewalld.service 
+  202  systemctl stop firewalld.service 
+  203  csf
+  204  ip r l 
+  205  csf -x
+  206  exit
+  207  pwd
+  208  cd /var/www/html/
+  209  ls
+  210  ls -l
+  211  mkdir datathon
+  212  ls -l
+  213  git clone https://github.com/somnetics/datathon.git
+  214  ls -l
+  215  cd datathon/
+  216  ls
+  217  cd application/
+  218  ls
+  219  exit
+  220  clear
+  221  systemctl status firewalld
+  222  clear
+  223  history 
+  224  cat /etc/*se
+  225  iptables -L
+  226  systemctl status firewalld.service 
+  227  csf
+  228  systemctl status csf
+  229  firewall-cmd --list-all
+  230  firewall-cmd --list-all-zones | less
+  231  firewall-cmd --zone=public --list-ports
+  232  firewall-cmd --zone=public --list-services
+  233  firewall-cmd --permanent --zone=public --add-port=2232/tcp
+  234  cd /etc/sysconfig/
+  235  ls -la
+  236  vi firewalld 
+  237  cd /var/www/html/
+  238  mkdir bengal_athon
+  239  cd bengal_athon/
+  240  git clone https://github.com/somnetics/bengal_athon.git
+  241  firewall-cmd --permanent --zone=public --add-port=2232/tcp
+  242  systemctl start firewalld.service
+  243  firewall-cmd --permanent --zone=public --add-port=2232/tcp
+  244  systemctl status firewalld.service 
+  245  netstat -ntlp
+  246  firewall-cmd --zone=public --list-services
+  247  vi /etc/sysctl.conf 
+  248  firewall-cmd --get-active-zones
+  249  firewall-cmd --permanent --zone=public --list-all
+  250  iptables -L
+  251  systemctl restart firewalld.service 
+  252  firewall-cmd --permanent --zone=public --list-all
+  253  netstat -ntlp
+  254  firewall-cmd --permanent --zone=public --add-port=3306/tcp
+  255  systemctl restart firewalld.service 
+  256  firewall-cmd --permanent --zone=public --list-all
+  257  netstat -ntlp
+  258  firewall-cmd --permanent --zone=public --add-port=11211/tcp
+  259  systemctl restart firewalld.service 
+  260  firewall-cmd --permanent --zone=public --add-port=10050/tcp
+  261  systemctl restart firewalld.service 
+  262  firewall-cmd --permanent --zone=public --add-port=111/tcp
+  263  systemctl restart firewalld.service 
+  264  firewall-cmd --permanent --zone=public --list-all
+  265  systemctl status firewalld.service 
+  266  ifconfig 
+  267  systemctl status firewalld.service
+  268  systemctl status firewa1ld.s
+  269  systemctl status firewa1ld.service
+  270  systemctl status firewalld.service
+  271  systemctl status firewa1ld.service
+  272  systemctl status firewalld.service
+  273  history
+
