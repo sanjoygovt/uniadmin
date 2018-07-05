@@ -8,7 +8,7 @@ CentOS Linux release 7.5.1804 (Core)
 Connecting to server:
 -------------------------------------------------------------------------
 ssh root@192.168.0.130
-password: r$0^&0*/$t1@@!a
+password: sa$0n^&j0*/$t1@@!ay
 netstat -tulpn | grep sshd
 -------------------------------------------------------------------------
 PORT     STATE  SERVICE    VERSION
@@ -21,10 +21,8 @@ PORT     STATE  SERVICE    VERSION
 =========================================================================
 Users:
 -------------------------------------------------------------------------
-Username: Administrator
-password: tt$$admin (current: tt$$admin)
-
-root password: r$0^&0*/$t1@@!a (current: r$0^&0*/$t1@@!a)
+Username: Administratorx
+password: stta$r$admkiarn 
 ==========================================================================
 
 Packages Installed:
