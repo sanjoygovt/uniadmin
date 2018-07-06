@@ -1,0 +1,19 @@
+Installation Procedures:
+https://tecadmin.net/install-java-non-lts-on-centos/
+===========================================JAVA 10 INSTALLATION IN CENTOS 7============================================================
+769  wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie"   http://download.oracle.com/otn-pub/java/jdk/10.0.1+10/fb4372174a714e6b8c52526dc134031e/jdk-10.0.1_linux-x64_bin.tar.gzwget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie"   http://download.oracle.com/otn-pub/java/jdk/10.0.1+10/fb4372174a714e6b8c52526dc134031e/jdk-10.0.1_linux-x64_bin.tar.gzwget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+  770  wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie"   http://download.oracle.com/otn-pub/java/jdk/10.0.1+10/fb4372174a714e6b8c52526dc134031e/jdk-10.0.1_linux-x64_bin.tar.gz
+  771  tar zxf jdk-10.0.1_linux-x64_bin.tar.gz /usr/local/
+  772  tar xvf jdk-10.0.1_linux-x64_bin.tar.gz /usr/local/
+  773  tar xvzf jdk-10.0.1_linux-x64_bin.tar.gz /usr/local/
+  774  tar xzf jdk-10.0.1_linux-x64_bin.tar.gz -C /usr/local/
+  775  mv /usr/local/jdk-10.0.1/ /usr/local/jdk-10
+  776  alternatives --install /usr/bin/java java /usr/local/jdk-10/bin/java 2
+  777  alternatives --config java
+  778  alternatives --install /usr/bin/jar jar /usr/local/jdk-10/bin/jar 2
+  779  alternatives --install /usr/bin/javac javac /usr/local/jdk-10/bin/javac 2
+  780  alternatives --set jar /usr/local/jdk-10/bin/jar
+  781  alternatives --set javac /usr/local/jdk-10/bin/javac
+  782  java -version
+  783  export JAVA_HOME=/usr/local/jdk-10
+  784  export PATH=$PATH:/usr/local/jdk-10/bin
