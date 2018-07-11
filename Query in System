@@ -1,18 +1,25 @@
+
+[stat .bashrc, lsof -p PID]
+
 Is it powered on?
 [check: Fan running, power led, any beep, blue screen, display]
 
 Can you ping?
 [ping ip,]
 
+
 Can you log in to SSH/FTP/SFTP/n?
 [ssh root@103.231.8.182 -p2232, ssh username@ssh.server.com]
 -----------------------------------------------------
 Is your disk full?
 [ext2, ext3, fat16, fat32, hfs, jfs, linux-swap, ntfs, reiserfs, hp-ufs, sun-ufs, xfs]
-[cat /proc/partitions, fdisk -l, vmstat, du -h /home/share_ftp/, du -sh /home/share_ftp/]
+[watch df -h, df -h, cat /proc/partitions, fdisk -l, vmstat, du -h /home/share_ftp/, du -sh /home/share_ftp/]
 
 Diagnosing and Fixing Memory Issues.
+
 Determining Free Memory and Swap Activity.
+[cat /proc/meminfo, cat /proc/meminfo | head -n 1, cat /proc/cpuinfo]
+
 Is the system out of memory?
 Are you experiencing network issues?
 -----------------------------------------------------
