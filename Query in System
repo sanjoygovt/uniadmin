@@ -1,6 +1,9 @@
 Is it powered on?
+[check: Fan running, power led, any beep, blue screen, display]
 Can you ping?
+[ping ip,]
 Can you log in to SSH/FTP/SFTP/n?
+[]
 -----------------------------------------------------
 Is your disk full?
 Diagnosing and Fixing Memory Issues.
