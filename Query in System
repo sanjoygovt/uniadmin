@@ -2,14 +2,18 @@
 [stat .bashrc, lsof -p PID, dmesg | less, whereis ifconfig, lsof, netstat, Ctrl + Alt + f3 return with, Ctrl + Alt + f7,
 ps -A | grep PID, netstat -na | grep 22, ]
 
-
+*****************************************************************************************************************************
 Is it powered on?
 [check: Fan running, power led, any beep, blue screen, display]
 
+***************************************************************************************************************************
 Can you ping?
 [ping ip, ping -c 10 google.com, dig google.com, dig google.com MX, dig google.com ANY, dig -x 8.8.8.8, host –a google.com,
 host 8.8.8.8, traceroute google.com, traceroute -n google.com, traceroute -I google.com, traceroute -T google.com,
-mtr google.com, mtr --report google.com, ss | less, ss -ta, ss -t4 state established, ss -t4 state closed, arp]
+mtr google.com, mtr --report google.com, ss | less, ss -ta, ss -t4 state established, ss -t4 state closed, arp, arp -n,
+tcpdump -i ens192, tcpdump -i ens192 tcp, tcpdump -i ens192 port 2232, tcpdump -w /home/siipl_ftp/a.txt -i ens192,
+tcpdump -r /home/siipl_ftp/a.txt,]
+************************************************************************************************************************
 
 
 Can you log in to SSH/FTP/SFTP/n?
