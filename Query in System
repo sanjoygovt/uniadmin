@@ -1,6 +1,6 @@
 [Unusual Accounts | Unusual Log Entries, Unusual Processes and Services, Unusual Files, Unusual Network Usage, Unusual Scheduled Tasks,
 Other Unusual Items]
-
+******************************************************************************************************************************
 
 
 
@@ -28,7 +28,7 @@ tcpdump -r /home/share_ftp/a.txt,]
 
 Can you log in to SSH/FTP/SFTP/n?
 [ssh root@103.231.8.182 -p2232, ssh username@ssh.server.com]
------------------------------------------------------
+*************************************************************************************************************************
 Is your disk full?
 [ext2, ext3, fat16, fat32, hfs, jfs, linux-swap, ntfs, reiserfs, hp-ufs, sun-ufs, xfs]
 [watch df -h, df -h, cat /proc/partitions, fdisk -l, vmstat, du -h /home/share_ftp/, du -sh /home/share_ftp/]
@@ -42,6 +42,7 @@ for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print "
 for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less]
 
 Is the system out of memory?
+***************************************************************************************************************************
 Are you experiencing network issues?
 -----------------------------------------------------
 Website is Not Loading.
