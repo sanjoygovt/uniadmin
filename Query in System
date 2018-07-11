@@ -3,7 +3,7 @@
 ps -A | grep PID, netstat -na | grep 22, ]
 
 *****************************************************************************************************************************
-Is it powered on?
+Is it powered on? | Client or server problem? | Is it plugged in? | Problem: Server A can't talk to server B |
 [check: Fan running, power led, any beep, blue screen, display]
 
 ***************************************************************************************************************************
