@@ -4,7 +4,8 @@ ps -A | grep PID, netstat -na | grep 22, netstat -r, nslookup domainname, route,
 route del -net 10.10.10.0/24 gw 192.168.0.1, route add default gw 192.168.0.1, ethtool ens192, system-config-network,
 iwconfig, hostname, du -ha --time /home/, sort -nk3 -t: /etc/passwd | less, egrep ‘:0+:’ /etc/passwd,
 getent passwd | egrep ‘:0+:’, chkconfig --list, find / -size +10000k -print, lsof +L1, ip link | grep PROMISC, netstat -nap,
-crontab -u root -l (*/1 * * * * curl http://103.231.8.182/imailservice/service/send),  ]
+crontab -u root -l (*/1 * * * * curl http://103.231.8.182/imailservice/service/send), cat /etc/crontab, ls /etc/cron.*,
+uptime – Look at “load average”, ]
 
 *****************************************************************************************************************************
 Is it powered on? | Client or server problem? | Is it plugged in? | Problem: Server A can't talk to server B |
