@@ -1,11 +1,13 @@
 
-[stat .bashrc, lsof -p PID]
+[stat .bashrc, lsof -p PID, dmesg | less, whereis ifconfig, lsof, netstat, Ctrl + Alt + f3 return with, Ctrl + Alt + f7,
+ps -A | grep PID, netstat -na | grep 22, ]
+
 
 Is it powered on?
 [check: Fan running, power led, any beep, blue screen, display]
 
 Can you ping?
-[ping ip,]
+[ping ip, ping -c 10 google.com]
 
 
 Can you log in to SSH/FTP/SFTP/n?
