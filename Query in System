@@ -1,6 +1,8 @@
 
 [stat .bashrc, lsof -p PID, dmesg | less, whereis ifconfig, lsof, netstat, Ctrl + Alt + f3 return with, Ctrl + Alt + f7,
-ps -A | grep PID, netstat -na | grep 22, ]
+ps -A | grep PID, netstat -na | grep 22, netstat -r, nslookup domainname, route, route add -net 10.10.10.0/24 gw 192.168.0.1,
+route del -net 10.10.10.0/24 gw 192.168.0.1, route add default gw 192.168.0.1, ethtool ens192, system-config-network,
+iwconfig, hostname, du -ha --time /home/]
 
 *****************************************************************************************************************************
 Is it powered on? | Client or server problem? | Is it plugged in? | Problem: Server A can't talk to server B |
@@ -11,8 +13,8 @@ Can you ping?
 [ping ip, ping -c 10 google.com, dig google.com, dig google.com MX, dig google.com ANY, dig -x 8.8.8.8, host –a google.com,
 host 8.8.8.8, traceroute google.com, traceroute -n google.com, traceroute -I google.com, traceroute -T google.com,
 mtr google.com, mtr --report google.com, ss | less, ss -ta, ss -t4 state established, ss -t4 state closed, arp, arp -n,
-tcpdump -i ens192, tcpdump -i ens192 tcp, tcpdump -i ens192 port 2232, tcpdump -w /home/siipl_ftp/a.txt -i ens192,
-tcpdump -r /home/siipl_ftp/a.txt,]
+tcpdump -i ens192, tcpdump -i ens192 tcp, tcpdump -i ens192 port 2232, tcpdump -w /home/share_ftp/a.txt -i ens192,
+tcpdump -r /home/share_ftp/a.txt,]
 ************************************************************************************************************************
 
 
