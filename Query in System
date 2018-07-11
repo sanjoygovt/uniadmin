@@ -3,9 +3,11 @@ Is it powered on?
 Can you ping?
 [ping ip,]
 Can you log in to SSH/FTP/SFTP/n?
-[]
+[ssh root@103.231.8.182 -p2232, ssh username@ssh.server.com]
 -----------------------------------------------------
 Is your disk full?
+[ext2, ext3, fat16, fat32, hfs, jfs, linux-swap, ntfs, reiserfs, hp-ufs, sun-ufs, xfs]
+[cat /proc/partitions, fdisk -l, ]
 Diagnosing and Fixing Memory Issues.
 Determining Free Memory and Swap Activity.
 Is the system out of memory?
