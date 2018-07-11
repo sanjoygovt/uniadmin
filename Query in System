@@ -7,7 +7,9 @@ Is it powered on?
 [check: Fan running, power led, any beep, blue screen, display]
 
 Can you ping?
-[ping ip, ping -c 10 google.com]
+[ping ip, ping -c 10 google.com, dig google.com, dig google.com MX, dig google.com ANY, dig -x 8.8.8.8, host –a google.com,
+host 8.8.8.8, traceroute google.com, traceroute -n google.com, traceroute -I google.com, traceroute -T google.com,
+mtr google.com, mtr --report google.com, ss | less, ss -ta, ss -t4 state established, ss -t4 state closed, arp]
 
 
 Can you log in to SSH/FTP/SFTP/n?
