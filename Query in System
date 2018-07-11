@@ -36,7 +36,10 @@ Is your disk full?
 Diagnosing and Fixing Memory Issues.
 
 Determining Free Memory and Swap Activity.
-[cat /proc/meminfo, cat /proc/meminfo | head -n 1, cat /proc/cpuinfo]
+[cat /proc/meminfo, cat /proc/meminfo | head -n 1, cat /proc/cpuinfo, swapon --summary, cat /proc/swaps, free -h, free -m,
+top, dmidecode -t 17, pidof memcached, pgrep memcached, awk '/VmSwap/{print $2 " " $3}' /proc/31631/status, 
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done, 
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less]
 
 Is the system out of memory?
 Are you experiencing network issues?
