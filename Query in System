@@ -1,8 +1,11 @@
 [Unusual Accounts | Unusual Log Entries, Unusual Processes and Services, Unusual Files, Unusual Network Usage, Unusual Scheduled Tasks,
 Other Unusual Items]
 ******************************************************************************************************************************
-
-
+Linux Environment PATH:
+[env, set | more, printenv, PATH=/usr/local/jdk1.8.0/bin:$PATH, export PATH, echo $BASH_VERSION, echo $HOSTNAME, echo $CDPATH, echo $HISTFILE,
+echo $HISTFILESIZE, echo $HISTSIZE, echo $HOME, echo $LANG, echo $PS1, echo $TERM, echo $SHELL, echo $DISPLAY, 
+export EDITOR=/usr/bin/vim, printenv > env.txt, cat env.txt, printenv | grep HOME, printenv | less]
+******************************************************************************************************************************
 
 [stat .bashrc, lsof -p PID, dmesg | less, whereis ifconfig, lsof, netstat, Ctrl + Alt + f3 return with, Ctrl + Alt + f7,
 ps -A | grep PID, netstat -na | grep 22, netstat -r, nslookup domainname, route, route add -net 10.10.10.0/24 gw 192.168.0.1,
