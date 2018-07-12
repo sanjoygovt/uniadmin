@@ -57,7 +57,7 @@ arp -e, iwconfig interface name, system-config-network(gui),]
 Website is Not Loading.
 [Check the Logs, /var/log/apache2 (ubuntu), apt-get update, apt-get install apache2, yum install httpd, apt-get install nginx,
 nginx -t, netstat -plunt | grep apache2/httpd/nginx, service apache2 start, /etc/init.d/httpd start, /etc/apache2, /etc/httpd,
-apache2ctl configtest, apachectl configtest, host -t A domainname, host -t AAAA domainname,
+apache2ctl configtest, apachectl configtest, host -t A domainname, host -t AAAA domainname, hostname -f
 ]
 ***************************************************************************************************************************
 Have you added DNS records?
@@ -88,14 +88,31 @@ yum repolist all | grep mysql
 yum-config-manager --disable/enable mysql57-community
 
 /etc/yum.repos.d/mysql-community.repo
-{[mysql57-community]
+[mysql57-community]
 name=MySQL 5.7 Community Server
 baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/6/$basearch/
 enabled=1
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
-}
+
+# Enable to use MySQL 8.0
+[mysql80-community]
+name=MySQL 8.0 Community Server
+baseurl=http://repo.mysql.com/yum/mysql-8.0-community/el/6/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 ]
+
+yum repolist enabled | grep mysql, yum install mysql-community-server, service mysqld start/stop/restart/status,
+mysql -uroot -p, mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword!';
+
+apt-get install mysql-server, mysql_secure_installation, mysql -u root -p, 
+create database unidb;
+create user 'uniadmin'@'localhost' identified by 'unizone';
+grant all on unidb.* to 'uniadmin';
+
+mysql -u uniadmin -p, use unidb; dpkg-reconfigure mysql-server-5.5, service mysql start
 ******************************************************************************************************************************
 Apache 2 Low-Memory Settings.
 Is port 80 or 443 blocked?
