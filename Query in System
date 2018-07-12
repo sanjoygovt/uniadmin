@@ -52,9 +52,13 @@ Are you experiencing network issues?
 ifup eth0, ifdown eth0, ifconfig eth0 mtu 20000, ifconfig eth0 - promisc, ping 4.2.2.2, netstat -r,
 nslookup www.uniadmin.net, routeroute add -net 10.10.10.0/24 gw 192.168.0.1, route add -net 10.10.10.0/24 gw 192.168.0.1,
 route del -net 10.10.10.0/24 gw 192.168.0.1, route add default gw 192.168.0.1, host www.uniadmin.net, ethtool eth0,
-arp -e, iwconfig interface name, system-config-network(gui), ]
+arp -e, iwconfig interface name, system-config-network(gui),]
 ***************************************************************************************************************************
 Website is Not Loading.
+[Check the Logs, /var/log/apache2 (ubuntu), apt-get update, apt-get install apache2, yum install httpd, apt-get install nginx,
+nginx -t, netstat -plunt | grep apache2/httpd/nginx, service apache2 start, /etc/init.d/httpd start, /etc/apache2, /etc/httpd,
+apache2ctl configtest, apachectl configtest, host -t A domainname]
+***************************************************************************************************************************
 Have you added DNS records?
 Is your web server installed?
 Is the web server running?
