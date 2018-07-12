@@ -78,7 +78,16 @@ Apache 2 Low-Memory Settings.
 Is port 80 or 443 blocked?
 Are the files in correct directory?
 Are virtual hosts correctly configured?
+***************************************************************************************************************
 Did you add a new IP address?
+[ifconfig, vim /etc/sysconfig/network, vim /etc/sysconfig/network-scripts/ifcfg-eth0, yum -y install net-tools,
+vim /etc/resolv.conf, systemctl status/restart/start network, /etc/init.d/network status/start/restart,
+vim /etc/network/interfaces(Debian/ubuntu), ifconfig eth0 192.168.10.50 netmask 255.255.255.0 up,
+route add default gw 192.168.10.1, echo "nameserver 8.8.8.8" > /etc/resolv.conf]
+
+
+****************************************************************************************************************
+
 Can’t Connect via SSH or FTP.
 Are you using Telnet or FTP?
 Is port 22 blocked?
