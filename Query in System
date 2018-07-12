@@ -113,6 +113,9 @@ create user 'uniadmin'@'localhost' identified by 'unizone';
 grant all on unidb.* to 'uniadmin';
 
 mysql -u uniadmin -p, use unidb; dpkg-reconfigure mysql-server-5.5, service mysql start
+grep 'temporary password' /var/log/mysqld.log
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'Artist#$00';
+show databases; 
 ******************************************************************************************************************************
 Apache 2 Low-Memory Settings.
 Is port 80 or 443 blocked?
