@@ -57,7 +57,8 @@ arp -e, iwconfig interface name, system-config-network(gui),]
 Website is Not Loading.
 [Check the Logs, /var/log/apache2 (ubuntu), apt-get update, apt-get install apache2, yum install httpd, apt-get install nginx,
 nginx -t, netstat -plunt | grep apache2/httpd/nginx, service apache2 start, /etc/init.d/httpd start, /etc/apache2, /etc/httpd,
-apache2ctl configtest, apachectl configtest, host -t A domainname]
+apache2ctl configtest, apachectl configtest, host -t A domainname, host -t AAAA domainname,
+]
 ***************************************************************************************************************************
 Have you added DNS records?
 Is your web server installed?
@@ -77,12 +78,25 @@ Check the Logs.
 Check Apache Configuration Syntax.
 Check Virtual Host Definitions.
 Troubleshoot Conflicting Directives.
----------------------------------------------------
+******************************************************************************************************************************
 Is the database running?
 If you have a database backend, is it running?
-Can your site connect to the database successfully?
----------------------------------------------------
 MySQL Low-Memory Settings.
+[shell> sudo yum localinstall mysql80014-community-release-el7-{version-number}.noarch.rpm, 
+yum repolist enabled | grep "mysql.*-community.*"
+yum repolist all | grep mysql
+yum-config-manager --disable/enable mysql57-community
+
+/etc/yum.repos.d/mysql-community.repo
+{[mysql57-community]
+name=MySQL 5.7 Community Server
+baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/6/$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
+}
+]
+******************************************************************************************************************************
 Apache 2 Low-Memory Settings.
 Is port 80 or 443 blocked?
 Are the files in correct directory?
