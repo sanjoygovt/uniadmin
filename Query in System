@@ -4,7 +4,8 @@ Other Unusual Items]
 Linux Environment PATH:
 [env, set | more, printenv, PATH=/usr/local/jdk1.8.0/bin:$PATH, export PATH, echo $BASH_VERSION, echo $HOSTNAME, echo $CDPATH, echo $HISTFILE,
 echo $HISTFILESIZE, echo $HISTSIZE, echo $HOME, echo $LANG, echo $PS1, echo $TERM, echo $SHELL, echo $DISPLAY, 
-export EDITOR=/usr/bin/vim, printenv > env.txt, cat env.txt, printenv | grep HOME, printenv | less]
+export EDITOR=/usr/bin/vim, printenv > env.txt, cat env.txt, printenv | grep HOME, printenv | less,
+unset TEST_VAR, printf "%s\n" $HOME, export PATH=${PATH}:/home/username/bin, export PATH=${PATH}:${HOME}/bin]
 ******************************************************************************************************************************
 
 [stat .bashrc, lsof -p PID, dmesg | less, whereis ifconfig, lsof, netstat, Ctrl + Alt + f3 return with, Ctrl + Alt + f7,
