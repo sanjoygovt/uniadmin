@@ -158,7 +158,14 @@ route add default gw 192.168.10.1, echo "nameserver 8.8.8.8" > /etc/resolv.conf,
 
 Can’t Connect via SSH or FTP.
 Are you using Telnet or FTP?
+******************************************************************************************************************
 Is port 22 blocked?
+Start/Stop/Restart Iptables Firewall, Check all IPtables Firewall Rules, Block Specific IP Address in IPtables Firewall,
+
+[]
+*******************************************************************************************************************
+
+
 Forgot My Username or Password.
 Did you recently change your account?
 Did you add additional storage?
