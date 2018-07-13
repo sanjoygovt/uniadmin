@@ -161,7 +161,14 @@ Are you using Telnet or FTP?
 ******************************************************************************************************************
 Is port 22 blocked?
 Start/Stop/Restart Iptables Firewall, Check all IPtables Firewall Rules, Block Specific IP Address in IPtables Firewall,
-
+Unblock IP Address in IPtables Firewall, Block Specific Port on IPtables Firewall, 
+Allow Multiple Ports on IPtables using Multiport, Allow Specific Network Range on Particular Port on IPtables,
+Setup Port Forwarding in IPtables, Block Network Flood on Apache Port with IPtables, 
+Block Incoming Ping Requests on IPtables, Allow loopback Access, Keep a Log of Dropped Network Packets on IPtables,
+Block Access to Specific MAC Address on IPtables, Limit the Number of Concurrent Connections per IP Address,
+Search within IPtables Rule, Flush IPtables Firewall Chains or Rules, Save IPtables Rules to a File,
+Restore IPtables Rules from a File, Allow Established and Related Connections, Block Connection on Network Interface,
+Disable Outgoing Mails through IPTables, 
 []
 *******************************************************************************************************************
 
