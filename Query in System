@@ -66,6 +66,17 @@ systemctl start named, systemctl enable named, vim /etc/named.conf, named-checkc
 nameserver 94.237.127.9, nslookup ip, systemctl reload named ]
 ***************************************************************************************************************************
 Is your web server installed?
+Install Apache Web Server, Manage Apache HTTP Server on CentOS 7, Configure firewalld to Allow Apache Traffic, 
+Test Apache HTTP Server on CentOS 7, vim /etc/httpd/conf.d/vhost.conf, Apache Important Files and Directoires,
+Configure Name-based Virtual Hosts, Create the Directory Structure, Grant Permissions, Create Demo Pages for Each Virtual Host,
+Create New Virtual Host Files, Create the First Virtual Host File, Copy First Virtual Host and Customize for Additional Domains,
+Enable the New Virtual Host Files, Set Up Local Hosts File (Optional), Test Your Results
+[yum install httpd, systemctl start/status/enable httpd, # firewall-cmd --zone=public --permanent --add-service=http
+# firewall-cmd --zone=public --permanent --add-service=https, # firewall-cmd --reload, http://domain name/ip,
+mkdir -p /var/www/example.com/public_html, mkdir -p /var/www/example2.com/public_html,
+chown -R $USER:$USER /var/www/example.com/public_html, chown -R $USER:$USER /var/www/example2.com/public_html,
+chmod -R 755 /var/www, ]
+***************************************************************************************************************************
 Is the web server running?
 Is the syntax of your web server configuration files correct?
 Are the ports you configured open (not blocked by a firewall)?
