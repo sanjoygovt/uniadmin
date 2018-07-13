@@ -61,6 +61,10 @@ apache2ctl configtest, apachectl configtest, host -t A domainname, host -t AAAA 
 ]
 ***************************************************************************************************************************
 Have you added DNS records?
+[A (IPv4 address), AAAA (IPv6 address), NS (name server), PTR (pointer), MX (mail exchange), yum -y install bind bind-utils,
+systemctl start named, systemctl enable named, vim /etc/named.conf, named-checkconf, vim /etc/resolv.conf,
+nameserver 94.237.127.9, nslookup ip, systemctl reload named ]
+***************************************************************************************************************************
 Is your web server installed?
 Is the web server running?
 Is the syntax of your web server configuration files correct?
