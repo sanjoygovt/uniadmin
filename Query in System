@@ -46,6 +46,10 @@ for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print "
 for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less]
 
 Is the system out of memory?
+Adding Swap Space, Extending Swap on an LVM2 Logical Volume, Creating an LVM2 Logical Volume for Swap, 
+Creating a Swap File, 
+[dmidecode -t memory, dmidecode -t memory | grep -i size, swapon --show, dd if=/dev/zero of=/swapfile bs=1024 count=65536,
+chmod 0600 /swapfile, mkswap /swapfile, swapon /swapfile]
 ***************************************************************************************************************************
 Are you experiencing network issues?
 [ifconfig (interface configurator), ifconfig eth0/ens192, ifconfig eth0 192.168.50.5 netmask 255.255.255.0,
