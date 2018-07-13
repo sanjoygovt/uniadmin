@@ -169,7 +169,8 @@ Block Access to Specific MAC Address on IPtables, Limit the Number of Concurrent
 Search within IPtables Rule, Flush IPtables Firewall Chains or Rules, Save IPtables Rules to a File,
 Restore IPtables Rules from a File, Allow Established and Related Connections, Block Connection on Network Interface,
 Disable Outgoing Mails through IPTables, 
-[]
+[yum info/install iptables, systemctl start/stop/status iptables, /etc/init.d/iptables start/stop/restart,
+iptables -L -n -v, iptables -A INPUT -s 10.10.214.10 -j DROP, iptables -A INPUT -p tcp -s 10.10.214.10 -j DROP]
 *******************************************************************************************************************
 
 
