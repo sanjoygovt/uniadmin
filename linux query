@@ -1,5 +1,6 @@
-*************************************Hey Linux, I need to know, Are you ready to answer me?***********************************
-******************************************************************************************************************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*************************************Hey Linux, I need to know something, Are you ready to answer me?************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Tell me where it is:
 Find Files Using Name in Current Directory, Find Files Under Home Directory, Find Files Using Name and Ignoring Case, 
 Find Directories Using Name, Find specific Files Using Name, Find all conf Files in Directory, Find Files With 777 Permissions,
@@ -25,3 +26,5 @@ find /home -user root, find /home -group root, find / -user ctrl4c -iname "*.con
 find / -mtime +20 -mtime -50, find / -cmin -60, find / -mmin -60, find / -amin -60, find / -size 50M, 
 find / -size +50M -size -100M, find / -size +100M -exec rm -rf {} \;    find / -type f -name *.mp3 -size +10M -exec rm {} \; 
 ]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*************************************Hi Network How are you?*************************************************************
