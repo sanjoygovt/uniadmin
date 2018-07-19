@@ -42,4 +42,20 @@ netstat -su, netstat -tp, netstat -ac 5 | grep tcp, netstat -r, netstat -i, nets
 netstat -ap | grep http, netstat --statistics --raw, 
 ]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+------------------------------------Hey I told you to have these package, you did------------------------------------------
+
+Install a Package with YUM and will ask you, Removing a Package with YUM and ask you, Updating a Package using YUM,
+yum update nmap, List a Package using YUM, Search for a Package using YUM, Get Information of a Package using YUM,
+List all Available Packages using YUM, List all Installed Packages using YUM, Yum Provides Function,
+Check for Available Updates using Yum, Update System using Yum, yum update, List all available Group Packages,
+Install a Group Packages, Update a Group Packages, Remove a Group Packages, List Enabled Yum Repositories,
+List all Enabled and Disabled Yum Repositories, Install a Package from Specific Repository, Interactive Yum Shell,
+Clean Yum Cache, View History of Yum, 
+[
+yum install nmap,  yum -y install nmap, yum remove nmap, yum -y remove nmap, yum list openssh, yum search openssh,
+yum info vsftpd, yum list | less, yum list installed | less, yum provides /etc/httpd/conf/httpd.conf, yum check-update,
+yum grouplist, yum groupinstall 'Python3.6', yum groupupdate 'Python3.6', yum groupremove 'Python3.6', yum repolist,
+yum repolist all, yum --enablerepo=epel install firefox, yum shell, yum clean all, yum history
+]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
