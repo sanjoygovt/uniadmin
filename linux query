@@ -28,3 +28,18 @@ find / -size +50M -size -100M, find / -size +100M -exec rm -rf {} \;    find / -
 ]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 *************************************Hi Network How are you?*************************************************************
+
+Listing all the LISTENING Ports of TCP and UDP connections, Listing TCP Ports connections, Listing UDP Ports connections,
+Listing all LISTENING Connections, Listing all TCP Listening Ports, Listing all UDP Listening Ports, 
+Listing all UNIX Listening Ports, Showing Statistics by Protocol, Showing Statistics by TCP Protocol,
+Showing Statistics by UDP Protocol, Displaying Service name with PID, Displaying Promiscuous Mode, Displaying Kernel IP routing,
+Showing Network Interface Transactions, Showing Kernel Interface Table,  Displaying IPv4 and IPv6 Information, 
+Print Netstat Information Continuously, Finding Listening Programs, Displaying RAW Network Statistics, 
+
+[
+netstat -a | more, netstat -at, netstat -au, netstat -l, netstat -lt, netstat -lu, netstat -lx, netstat -s, netstat -st,
+netstat -su, netstat -tp, netstat -ac 5 | grep tcp, netstat -r, netstat -i, netstat -ie, netstat -g, netstat -c,
+netstat -ap | grep http, netstat --statistics --raw, 
+]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
