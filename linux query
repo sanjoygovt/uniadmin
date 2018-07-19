@@ -58,4 +58,12 @@ yum grouplist, yum groupinstall 'Python3.6', yum groupupdate 'Python3.6', yum gr
 yum repolist all, yum --enablerepo=epel install firefox, yum shell, yum clean all, yum history
 ]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+++++++++++++++++++++++++++++++++++++++++++++Hi Linux Can you tell me user specific open files+++++++++++++++++++++++++++++++
+List User Specific Opened Files, Find Processes running on Specific Port, List Only IPv4 & IPv6 Open Files, 
+List Open Files of TCP Port ranges 1-1024, Find Out who’s Looking What Files and Commands?, List all Network Connections,
+Search by PID, Kill all Activity of Particular User, 
 
+[
+lsof -u ctrl4c, lsof -i TCP:2232, lsof -i 4, lsof -i TCP:1-1024, lsof -i -u username, lsof -i, lsof -p 1, 
+kill -9 `lsof -t -u username` , 
+]
