@@ -38,6 +38,12 @@ Is your disk full?
 [watch df -h, df -h, cat /proc/partitions, fdisk -l, vmstat, du -h /home/share_ftp/, du -sh /home/share_ftp/]
 
 Diagnosing and Fixing Memory Issues.
+*************************************************************************************************************************
+Hi Process What are you doing?
+Check Top Processes sorted by RAM or CPU Usage
+[ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head, ]
+
+*************************************************************************************************************************
 
 Determining Free Memory and Swap Activity.
 [cat /proc/meminfo, cat /proc/meminfo | head -n 1, cat /proc/cpuinfo, swapon --summary, cat /proc/swaps, free -h, free -m,
