@@ -5,15 +5,23 @@ Find Files Using Name in Current Directory, Find Files Under Home Directory, Fin
 Find Directories Using Name, Find specific Files Using Name, Find all conf Files in Directory, Find Files With 777 Permissions,
 Find Files Without 777 Permissions, Find Read Only Files, Find Executable Files, 
 Find Files with 777 Permissions and Chmod to 644, Find Directories with 777 Permissions and Chmod to 755,
-Find and remove single File, Find and remove Multiple File, 
-
-[find . -name httpd.conf, find /home -name manual.txt, find /home -iname manual.txt, tree /home, find / -type d -name httpd,
+Find and remove single File, Find and remove Multiple File, Find all Empty Files, Find all Empty Directories,
+File all Hidden Files, Find Single File Based on User, Find all Files Based on User, Find all Files Based on Group, 
+Find Particular Files of User, Find Last 50 Days Modified Files, Find Last 50 Days Accessed Files, 
+Find Last 50-100 Days Modified Files, Find Changed Files in Last 1 Hour, Find Modified Files in Last 1 Hour, 
+Find Accessed Files in Last 1 Hour, Find 50MB Files, Find Size between 50MB – 100MB, Find and Delete 100MB Files, 
+Find Specific Files and Delete, 
+[
+find . -name httpd.conf, find /home -name manual.txt, find /home -iname manual.txt, tree /home, find / -type d -name httpd,
 find . -type f -name index.html, find . -type f -name "*.conf", find / -type f -perm 0777 -print,
 find . -type f -perm 0777 -print, find / -type f ! -perm 777, find / -perm /u=r, find / -perm /a=x, 
 find / -type f -perm 0777 -print -exec chmod 644 {} \;   find / -type d -perm 777 -print -exec chmod 755 {} \; 
 find . -type f -name "tecmint.txt" -exec rm -f {} \; 
-# find . -type f -name "*.txt" -exec rm -f {} \;
+# find . -type f -name "*.txt" -exec rm -f {} \; 
 OR
-# find . -type f -name "*.mp3" -exec rm -f {} \;
-
+# find . -type f -name "*.mp3" -exec rm -f {} \;    
+find /tmp -type f -empty, find / -type d -empty,  find / -type f -name ".*", find / -user root -name httpd.conf,
+find /home -user root, find /home -group root, find / -user ctrl4c -iname "*.conf", find / -mtime 50, find / -atime 50, 
+find / -mtime +20 -mtime -50, find / -cmin -60, find / -mmin -60, find / -amin -60, find / -size 50M, 
+find / -size +50M -size -100M, find / -size +100M -exec rm -rf {} \;    find / -type f -name *.mp3 -size +10M -exec rm {} \; 
 ]
