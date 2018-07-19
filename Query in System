@@ -35,7 +35,7 @@ Can you log in to SSH/FTP/SFTP/n?
 *************************************************************************************************************************
 Is your disk full?
 [ext2, ext3, fat16, fat32, hfs, jfs, linux-swap, ntfs, reiserfs, hp-ufs, sun-ufs, xfs]
-[watch df -h, df -h, cat /proc/partitions, fdisk -l, vmstat, du -h /home/share_ftp/, du -sh /home/share_ftp/]
+[watch df -h, df -h, df -h / cat /proc/partitions, fdisk -l, vmstat, du -h /home/share_ftp/, du -sh /home/share_ftp/]
 
 Diagnosing and Fixing Memory Issues.
 *************************************************************************************************************************
