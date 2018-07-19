@@ -1,1 +1,19 @@
+*************************************Hey Linux, I need to know, Are you ready to answer me?***********************************
+******************************************************************************************************************************
+Tell me where it is:
+Find Files Using Name in Current Directory, Find Files Under Home Directory, Find Files Using Name and Ignoring Case, 
+Find Directories Using Name, Find specific Files Using Name, Find all conf Files in Directory, Find Files With 777 Permissions,
+Find Files Without 777 Permissions, Find Read Only Files, Find Executable Files, 
+Find Files with 777 Permissions and Chmod to 644, Find Directories with 777 Permissions and Chmod to 755,
+Find and remove single File, Find and remove Multiple File, 
 
+[find . -name httpd.conf, find /home -name manual.txt, find /home -iname manual.txt, tree /home, find / -type d -name httpd,
+find . -type f -name index.html, find . -type f -name "*.conf", find / -type f -perm 0777 -print,
+find . -type f -perm 0777 -print, find / -type f ! -perm 777, find / -perm /u=r, find / -perm /a=x, 
+find / -type f -perm 0777 -print -exec chmod 644 {} \;   find / -type d -perm 777 -print -exec chmod 755 {} \; 
+find . -type f -name "tecmint.txt" -exec rm -f {} \; 
+# find . -type f -name "*.txt" -exec rm -f {} \;
+OR
+# find . -type f -name "*.mp3" -exec rm -f {} \;
+
+]
