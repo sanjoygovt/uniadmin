@@ -1,1 +1,1 @@
-# uniadmin
+# uniadmin is puzzled into system related query, solutions, possibilities and system instructions that is analyzes, implemented,  and tested in different systems to to understand its behavior, feel friendly and fast way of commanding a system.
