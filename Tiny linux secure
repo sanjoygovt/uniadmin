@@ -1,0 +1,27 @@
+Physical System Security (Configure the BIOS to disable booting from CD/DVD, External Devices Next enable BIOS password &
+also protect GRUB with password to restrict physical access of your system)
+Disk Partitions
+Minimize Packages to Minimize Vulnerability
+Check Listening Network Ports
+Use Secure Shell(SSH)
+Disable root Login
+Only allow Specific Users
+Keep System updated
+Lockdown Cronjobs
+Disable USB stick to Detect
+Turn on SELinux
+Remove KDE/GNOME Desktops
+Turn Off IPv6
+Restrict Users to Use Old Passwords
+How to Check Password Expiration of User
+Lock and Unlock Account Manually++++++++++++++++++++++++++
+Enforcing Stronger Passwords
+Enable Iptables (Firewall)
+Disable Ctrl+Alt+Delete in Inittab
+Checking Accounts for Empty Passwords
+Display SSH Banner Before Login
+Monitor User Activities
+Review Logs Regularly
+Important file Backup
+Keep /boot as read-only
+Ignore ICMP or Broadcast Request
