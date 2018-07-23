@@ -184,6 +184,15 @@ Count Number of Lines, Display Number of Words, Count Number of Bytes and Charac
 cat filen.txt, wc abc.js, wc -l net.py, wc -w net.py, wc -c net.py, wc -L net.py
 ]
 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                                         History in LINUX
+*************************************************************************************************************************
+List Last/All Executed Commands in Linux, List All Commands with Date and Timestamp, Filter Commands in History,
+Ignore Duplicate Commands in History, Unset export Command, Save export Command Permanently, 
+List Specific User’s Executed Commands, Disable Storing History of Commands, Delete or Clear History of Commands,
+Search Commands in History Using Grep Command, Search Lastly Executed Command, Recall Last Executed Command,
+Recall Lastly Executed Specific Command, 
+
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
                                         What the system is
 -------------------------------------------------------------------------------------------------------------------------
 View the contents of a directory, Viewing blocks, HDD partition, External HDD, Converting and copying a file, 
