@@ -27,7 +27,7 @@ find / -mtime +20 -mtime -50, find / -cmin -60, find / -mmin -60, find / -amin -
 find / -size +50M -size -100M, find / -size +100M -exec rm -rf {} \;    find / -type f -name *.mp3 -size +10M -exec rm {} \; 
 ]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                                                    Hi Network How are you?
+                                            Hi Network How are you?
 **************************************************************************************************************************
 
 Listing all the LISTENING Ports of TCP and UDP connections, Listing TCP Ports connections, Listing UDP Ports connections,
@@ -59,7 +59,7 @@ yum grouplist, yum groupinstall 'Python3.6', yum groupupdate 'Python3.6', yum gr
 yum repolist all, yum --enablerepo=epel install firefox, yum shell, yum clean all, yum history
 ]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                                        Hi Linux Can you tell me  The user specific open files
+                                 Hi Linux Can you tell me  The user specific open files
 ***************************************************************************************************************************
 List User Specific Opened Files, Find Processes running on Specific Port, List Only IPv4 & IPv6 Open Files, 
 List Open Files of TCP Port ranges 1-1024, Find Out who’s Looking What Files and Commands?, List all Network Connections,
@@ -70,7 +70,7 @@ lsof -u ctrl4c, lsof -i TCP:2232, lsof -i 4, lsof -i TCP:1-1024, lsof -i -u user
 kill -9 `lsof -t -u username` , 
 ]
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-                                                    Network Sniffer 
+                                             Network Sniffer 
 ***************************************************************************************************************************
 Install tcpdump in Linux, Capture Packets from Specific Interface, Capture Only N Number of Packets, 
 Print Captured Packets in ASCII, Display Available Interfaces, Display Captured Packets in HEX and ASCII,
@@ -82,7 +82,7 @@ tcpdump -r rawpkt.pcap, tcpdump -n -i ens192, tcpdump -i ens192 tcp, tcpdump -i 
 tcpdump -i ens192 src 17.24.20.11, tcpdump -i ens192 dst 95.199.62.141, 
 ]
 ############################################################################################################################
-                                       Create a file for me
+                                           Create a file for me
 ____________________________________________________________________________________________________________________________
 Create an Empty File, Create Multiple Files, Change File Access and Modification Time, Avoid Creating New File,
 Change File Modification Time, Set the Access and Modification times, Use the time stamp of another File, 
@@ -92,7 +92,7 @@ touch file1, touch file1 file2 file3, touch -a file3, touch -c file2, touch -m f
 touch -r file1, file2, touch -t YYMMDDHHMM.SS file3, 
 ]
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                              Hi WGET Download some files 
+                                          Hi WGET Download some files 
 __________________________________________________________________________________________________________________________
 Single file download, Download file with different name, Download multiple file with http and ftp protocol,
 Read URL’s from a file, Download files in background, Restrict download speed limits, 
@@ -121,7 +121,7 @@ tar -xvf headerfiles.tar --wildcards '*.h'   tar -rvf dblisting.tar dbname.txt
 tar -czf - file9.tar/tar.gz/tar.bz2 | wc -c   
 ]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                                        chkconfig
+                                                   chkconfig
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 List All Services, Check Status of Specific Service, Start a Particular Service on Run Levels,
 systemctl list-dependencies, Stop a Particular Service on Run Levels, 
@@ -130,7 +130,7 @@ chkconfig --list, chkconfig --list | grep vsftpd, chkconfig --level 35 vsftpd on
 chkconfig --level 3 mongod off,  
 ]
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-                                   Mount                                   Unmount
+                                    Mount                                 Unmount
 ______________________________________________________________________________________________________________________________
 Mounting an ISO Image, Unmount an ISO Image, 
 [
@@ -138,7 +138,7 @@ mkdir /mnt/iso -> mount -t iso9660 -o loop /home/user/linuxiso.iso /mnt/iso/    
 umount /mnt/iso, 
 ]
 3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-                                   Disk Usage            du          df
+                                        Disk Usage            du          df
 ____________________________________________________________________________________________________________________________
 disk usage summary of a /home, Human Readable Format, grand total disk usage size of an directory, 
 disk usage of all the files and directories, disk usage of all files and folders in human readeable format,
@@ -183,3 +183,50 @@ Count Number of Lines, Display Number of Words, Count Number of Bytes and Charac
 [
 cat filen.txt, wc abc.js, wc -l net.py, wc -w net.py, wc -c net.py, wc -L net.py
 ]
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                                        What the system is
+-------------------------------------------------------------------------------------------------------------------------
+View the contents of a directory, Viewing blocks, HDD partition, External HDD, Converting and copying a file, 
+Checking the integrity of Downloaded/Transferred Packages, machine name, OS and Kernel, history, Being root,
+Make Directory, Make Files, Changing the file permission, Own a file, Install, Update and maintain Packages,
+Uncompressing a file, See current date, time and calendar, Print contents of a file, Copy and Move,
+See the working directory for easy navigation, Change the working directory, 
+-------------------------------------------------------------------------------------------------------------------------
+    Finding a file in a given directory
+    Searching a file with the given keywords
+    Finding online documentation
+    See the current running processes
+    Kill a running process
+    See the location of installed Binaries
+    Starting, Ending, Restarting a service
+    Making and removing of aliases
+    View the disk and space usages
+    Removing a file and/or directory
+    Print/echo a custom output on standard output
+    Changing password of on-self and other’s, if you are root.
+    View Printing queue
+    Compare two files
+    Download a file, the Linux way (wget)
+    Mount a block / partition / external HDD
+    Compile and Run a code written in ‘C’, ‘C++’ and ‘Java’ Programming Language
+---------------------------------------------------------------------------------------------------------------------------    
+    Configuring Network Interface
+    Viewing custom Network Related information
+    Getting information about Internet Server with customisable switches and Results
+    Digging DNS
+    Knowing Your System uptime
+    Sending an occasional Information to all other logged-in users
+    Send text messages directly to a user
+    Combination of commands
+    Renaming a file
+    Seeing the processes of a CPU
+    Creating newly formatted ext4 partition
+    Text File editors like vi, emacs and nano
+    Copying a large file/folder with progress bar
+    Keeping track of free and available memory
+    Backup a mysql database
+    Make difficult to guess – random password
+    Merge two text files
+    List of all the opened files
+
+
