@@ -75,10 +75,47 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 Install tcpdump in Linux, Capture Packets from Specific Interface, Capture Only N Number of Packets, 
 Print Captured Packets in ASCII, Display Available Interfaces, Display Captured Packets in HEX and ASCII,
 Capture and Save Packets in a File, Read Captured Packets File, Capture IP address Packets, Capture only TCP Packets, 
-Capture Packet from Specific Port, Capture Packets from source IP, 
+Capture Packet from Specific Port, Capture Packets from source IP, Capture Packets from destination IP, 
 [
 yum install tcpdump, tcpdump -i eth0,  tcpdump -c 10 -i eth0, tcpdump -A -i eth0, tcpdump -D, tcpdump -w rawpkt.pcap -i eth0,
 tcpdump -r rawpkt.pcap, tcpdump -n -i ens192, tcpdump -i ens192 tcp, tcpdump -i ens192 port 2232, 
-tcpdump -i ens192 src 17.24.20.11, 
-
+tcpdump -i ens192 src 17.24.20.11, tcpdump -i ens192 dst 95.199.62.141, 
+]
+############################################################################################################################
+                                       Create a file for me
+____________________________________________________________________________________________________________________________
+Create an Empty File, Create Multiple Files, Change File Access and Modification Time, Avoid Creating New File,
+Change File Modification Time, Set the Access and Modification times, Use the time stamp of another File, 
+Create a File using a specified time, 
+[
+touch file1, touch file1 file2 file3, touch -a file3, touch -c file2, touch -m file1, touch -c -t YYDDHHMM file2, 
+touch -r file1, file2, touch -t YYMMDDHHMM.SS file3, 
+]
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                              Hi WGET Download some files 
+__________________________________________________________________________________________________________________________
+Single file download, Download file with different name, Download multiple file with http and ftp protocol,
+Read URL’s from a file, Download files in background, Restrict download speed limits, 
+Restricted FTP and HTTP downloads with username and password, 
+[
+wget http://ftp.gnu.org/gnu/bash/bash-2.0.tar.gz, wget -O bash.tar.gz http://ftp.gnu.org/gnu/bash/bash-2.0.tar.gz, 
+wget http://ftp.gnu.org/gnu/bash/bash-2.0.tar.gz ftp://ftp.gnu.org/gnu/bash/bash-1.14.7.tar.gz, 
+wget -i /bash/url_list.txt, wget -b http://ftp.gnu.org/gnu/bash/bash-2.0.tar.gz, 
+wget -c --limit-rate=100k http://ftp.gnu.org/gnu/bash/bash-2.0.tar.gz, 
+wget --http-user=usern --http-password=passwd http://ftp.gnu.org/gnu/bash/bash-2.0.tar.gz,
+wget --ftp-user=usern --ftp-password=passwd ftp://ftp.gnu.org/gnu/bash/bash-2.0.tar.gz,
+]
+==========================================================================================================================
+                                      Linux Archiver
+==========================================================================================================================
+Create tar Archive File, Create tar.gz Archive File, Create tar.bz2 Archive File, Untar tar Archive File,
+Uncompress tar.gz Archive File, Uncompress tar.bz2 Archive File, List Content of tar Archive File, 
+List Content tar.gz Archive File, Untar Single file from tar File, Untar Single file from tar.gz File,  
+Extract Group of Files using Wildcard, Add Files or Directories to tar Archive File, 
+[
+tar -cvf file1-10-18.tar /home/newuser/, tar cvzf file1-10-19.tar.gz or file1-10-19.tgz /home/user, 
+tar cvfj file1-10-19.tar.bz2/tbz/tb2, tar -xvf fileabc.tar -C /home/user/documents/, tar -xvf file1-10-18.tar,
+tar -tvf file3.tar, tar -tvf file6.tar.gz/.tar.bz2, tar -xvf file8.tar viruses_listing.sh, 
+tar --extract --file=file9.tar viruses_listing.sh, tar -zxvf linking.tar.gz databse.xml, 
+tar -xvf headerfiles.tar --wildcards '*.h'   tar -rvf dblisting.tar dbname.txt
 ]
