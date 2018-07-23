@@ -121,5 +121,38 @@ tar -xvf headerfiles.tar --wildcards '*.h'   tar -rvf dblisting.tar dbname.txt
 tar -czf - file9.tar/tar.gz/tar.bz2 | wc -c   
 ]
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+                                        chkconfig
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+List All Services, Check Status of Specific Service, Start a Particular Service on Run Levels,
+systemctl list-dependencies, Stop a Particular Service on Run Levels, 
+[
+chkconfig --list, chkconfig --list | grep vsftpd, chkconfig --level 35 vsftpd on, chkconfig --list | grep 5:on, 
+chkconfig --level 3 mongod off,  
+]
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+                                   Mount                                   Unmount
+______________________________________________________________________________________________________________________________
+Mounting an ISO Image, Unmount an ISO Image, 
+[
+mkdir /mnt/iso -> mount -t iso9660 -o loop /home/user/linuxiso.iso /mnt/iso/    ->   cd /mnt/iso ->  ls -l
+umount /mnt/iso, 
+]
+3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+                                   Disk Usage            du          df
+____________________________________________________________________________________________________________________________
+disk usage summary of a /home, Human Readable Format, grand total disk usage size of an directory, 
+disk usage of all the files and directories, disk usage of all files and folders in human readeable format,
+disk usage of a directory tree with its subtress in Kilobyte blcoks, 
+disk usage of directory tree along with its subtrees in Megabytes (MB), grand total usage disk space at the last line,
+exclude any file formats , disk usage based on modification of time, 
+-  -   - - -  - - - - - - - - - - -- - - -- - - - - -- - -- - -- - - -- - - - -- - - - -- - - -- - - - - -- - -- - - - 
+Check File System Disk Space Usage, Display Information of all File System Disk Space Usage,
+Show Disk Space Usage in Human Readable Format, Display Information of /home File System, 
+Display Information of File System in Bytes, Display Information of File System in MB, Display Information of File System in GB,
+Display File System inodes, Display File System Type, Include Certain File System Type, Exclude Certain File System Type,
+[
+du  /home/user, du -h /home/user, du -sh /home/user, du -a /home/user, du -ah /home/user, du -k /home/user,
+du -mh /home/user, du -ch /home/user, du -ah --exclude="*.txt" /home/user, du -ha --time /home/user, 
+- - - - - - - - - -- - - -- - - -- - - - -- - - - -- - - - - -- - -- - - - - -- - -- - - - -- - - - -- - - -- - - - -- - - -
+df, df -a, df -h, df -hT /home, df -k, df -m, df -h, df -i, df -T,  df -t ext3, df -x ext3, 
+]
