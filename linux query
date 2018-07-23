@@ -174,3 +174,12 @@ apt-get install bash-4.4, apt-get remove firefox, apt-get purge firefox, apt-get
 apt-get --download-only source vsftpd, apt-get source vsftpd, apt-get --compile source gcc, apt-get download nmap,
 apt-get changelog vsftpd, apt-get check, apt-get build-dep binutills, apt-get autoclean, apt-get autoremove nessus,
 ]
+7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
+                                              Meta data Analyze in a file
+_________________________________________________________________________________________________________________________
+number of newline count, word count, byte and characters count in a files specified by the file arguments,
+Count Number of Lines, Display Number of Words, Count Number of Bytes and Characters, Display Length of Longest Line,
+
+[
+cat filen.txt, wc abc.js, wc -l net.py, wc -w net.py, wc -c net.py, wc -L net.py
+]
