@@ -1,3 +1,50 @@
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                                        What the system is
+-------------------------------------------------------------------------------------------------------------------------
+View the contents of a directory, Viewing blocks, HDD partition, External HDD, Converting and copying a file, 
+Checking the integrity of Downloaded/Transferred Packages, machine name, OS and Kernel, history, Being root,
+Make Directory, Make Files, Changing the file permission, Own a file, Install, Update and maintain Packages,
+Uncompressing a file, See current date, time and calendar, Print contents of a file, Copy and Move,
+See the working directory for easy navigation, Change the working directory, 
+-------------------------------------------------------------------------------------------------------------------------
+    Finding a file in a given directory
+    Searching a file with the given keywords
+    Finding online documentation
+    See the current running processes
+    Kill a running process
+    See the location of installed Binaries
+    Starting, Ending, Restarting a service
+    Making and removing of aliases
+    View the disk and space usages
+    Removing a file and/or directory
+    Print/echo a custom output on standard output
+    Changing password of on-self and other’s, if you are root.
+    View Printing queue
+    Compare two files
+    Download a file, the Linux way (wget)
+    Mount a block / partition / external HDD
+    Compile and Run a code written in ‘C’, ‘C++’ and ‘Java’ Programming Language
+---------------------------------------------------------------------------------------------------------------------------    
+    Configuring Network Interface
+    Viewing custom Network Related information
+    Getting information about Internet Server with customisable switches and Results
+    Digging DNS
+    Knowing Your System uptime
+    Sending an occasional Information to all other logged-in users
+    Send text messages directly to a user
+    Combination of commands
+    Renaming a file
+    Seeing the processes of a CPU
+    Creating newly formatted ext4 partition
+    Text File editors like vi, emacs and nano
+    Copying a large file/folder with progress bar
+    Keeping track of free and available memory
+    Backup a mysql database
+    Make difficult to guess – random password
+    Merge two text files
+    List of all the opened files
+
+
 [Unusual Accounts | Unusual Log Entries, Unusual Processes and Services, Unusual Files, Unusual Network Usage, 
 Unusual Scheduled Tasks, Other Unusual Items]
 ******************************************************************************************************************************
