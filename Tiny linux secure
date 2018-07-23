@@ -25,3 +25,14 @@ Review Logs Regularly
 Important file Backup
 Keep /boot as read-only
 Ignore ICMP or Broadcast Request
+[
+/sbin/chkconfig --list |grep '3:on', chkconfig serviceName off, yum -y remove package-name, apt-get remove package-name,
+netstat -tulpn, vi /etc/ssh/sshd_config > PermitRootLogin no > AllowUsers username > ,
+yum update, yum check-update, install usb-storage /bin/true, sestatus, setenforce enforcing, yum groupremove "X Window System",
+vi /etc/sysconfig/network > NETWORKING_IPV6=no ,IPV6INIT=no 
+vi /etc/pam.d/system-auth, vi /etc/pam.d/common-password > auth        sufficient    pam_unix.so likeauth nullok,
+password   sufficient    pam_unix.so nullok use_authtok md5 shadow remember=5, chage -l username, 
+chage -M 60 username ,chage -M 60 -m 7 -W 7 userName, passwd -l accountName, passwd -u accountName, vi /etc/pam.d/system-auth,
+cat /etc/shadow | awk -F: '($2==""){print $1}', vi /etc/fstab > LABEL=/boot     /boot     ext2     defaults,ro     1 2
+sysctl -p
+]
