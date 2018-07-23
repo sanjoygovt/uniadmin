@@ -157,7 +157,7 @@ du -mh /home/user, du -ch /home/user, du -ah --exclude="*.txt" /home/user, du -h
 df, df -a, df -h, df -hT /home, df -k, df -m, df -h, df -i, df -T,  df -t ext3, df -x ext3, 
 ]
 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                                                  Advanced Packaging Tool
+                                                  Advanced Packaging Tool | dpkg 
 - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 List All Available Packages, Find Out Package Name and Description of Software, Check Package Information, 
 Check Dependencies for Specific Packages, Check statistics of Cache, Update System Packages, 
@@ -166,6 +166,10 @@ Install Specific Package Version, Remove Packages Without Configuration,  Comple
 Download Only Source Code of Package, Download and Unpack a Package, Download, Unpack and Compile a Package, 
 Download a Package Without Installing, Check Change Log of Package, Check Broken Dependencies, Search and Build Dependencies,
 Auto clean Apt-Get Cache, Auto remove Installed Packages, 
+----------------------------------------------------------------------------------------------------------------------------
+Install a Package, List all the installed Packages, Remove a Package, View the Content of a Package, 
+Check a Package is installed or not, Check the location of Packages installed, Install all Packages from a Directory, 
+Unpack the Package but dont’ Configure, Reconfigure a Unpacked Package, 
 [
 apt-cache pkgnames, apt-cache search vsftpd, apt-cache show nmap, apt-cache showpkg vsftpd, apt-cache stats, 
 apt-get update, Upgrade Software Packages, apt-get upgrade, apt-get dist-upgrade, apt-get install nmap, 
@@ -173,6 +177,9 @@ apt-get install netcat gcc, apt-get install firefox --no-upgrade, apt-get instal
 apt-get install bash-4.4, apt-get remove firefox, apt-get purge firefox, apt-get remove --purge vsftpd, apt-get clean,
 apt-get --download-only source vsftpd, apt-get source vsftpd, apt-get --compile source gcc, apt-get download nmap,
 apt-get changelog vsftpd, apt-get check, apt-get build-dep binutills, apt-get autoclean, apt-get autoremove nessus,
+---------------------------------------------------------------------------------------------------------------------
+dpkg -i debianpkg.deb, dpkg -l, dpkg -l apache2, dpkg -r apache2, dpkg -c ebianpkg.deb, dpkg -s apache2, dpkg -L apache2,
+dpkg -R --install debpackages/ , dpkg --unpack debianpkg.deb, dpkg --configure apache2, 
 ]
 7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
                                               Meta data Analyze in a file
