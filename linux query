@@ -191,7 +191,11 @@ Ignore Duplicate Commands in History, Unset export Command, Save export Command 
 List Specific User’s Executed Commands, Disable Storing History of Commands, Delete or Clear History of Commands,
 Search Commands in History Using Grep Command, Search Lastly Executed Command, Recall Last Executed Command,
 Recall Lastly Executed Specific Command, 
-
+[
+history, export HISTTIMEFORMAT='%F %T  ', export HISTIGNORE='ls -l:pwd:date:', export HISTCONTROL=ignoredups,
+unset export HISTCONTROL, vim .bash_profile, vim .bash_history, export HISTSIZE=0, history -c, history | grep passwd,
+(reverse-i-search)`source ': source .bash_profile, !8, !net, 
+]
 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
                                         What the system is
 -------------------------------------------------------------------------------------------------------------------------
