@@ -106,7 +106,7 @@ wget --http-user=usern --http-password=passwd http://ftp.gnu.org/gnu/bash/bash-2
 wget --ftp-user=usern --ftp-password=passwd ftp://ftp.gnu.org/gnu/bash/bash-2.0.tar.gz,
 ]
 ==========================================================================================================================
-                                      Linux Archiver
+                                                 Linux Archiver
 ==========================================================================================================================
 Create tar Archive File, Create tar.gz Archive File, Create tar.bz2 Archive File, Untar tar Archive File,
 Uncompress tar.gz Archive File, Uncompress tar.bz2 Archive File, List Content of tar Archive File, 
@@ -118,4 +118,8 @@ tar cvfj file1-10-19.tar.bz2/tbz/tb2, tar -xvf fileabc.tar -C /home/user/documen
 tar -tvf file3.tar, tar -tvf file6.tar.gz/.tar.bz2, tar -xvf file8.tar viruses_listing.sh, 
 tar --extract --file=file9.tar viruses_listing.sh, tar -zxvf linking.tar.gz databse.xml, 
 tar -xvf headerfiles.tar --wildcards '*.h'   tar -rvf dblisting.tar dbname.txt
+tar -czf - file9.tar/tar.gz/tar.bz2 | wc -c   
 ]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
