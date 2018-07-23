@@ -156,3 +156,21 @@ du -mh /home/user, du -ch /home/user, du -ah --exclude="*.txt" /home/user, du -h
 - - - - - - - - - -- - - -- - - -- - - - -- - - - -- - - - - -- - -- - - - - -- - -- - - - -- - - - -- - - -- - - - -- - - -
 df, df -a, df -h, df -hT /home, df -k, df -m, df -h, df -i, df -T,  df -t ext3, df -x ext3, 
 ]
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+                                                  Advanced Packaging Tool
+- -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+List All Available Packages, Find Out Package Name and Description of Software, Check Package Information, 
+Check Dependencies for Specific Packages, Check statistics of Cache, Update System Packages, 
+Install or Upgrade Specific Packages, Install Multiple Packages, Upgrade Only Specific Packages, 
+Install Specific Package Version, Remove Packages Without Configuration,  Completely Remove Packages, Clean Up Disk Space, 
+Download Only Source Code of Package, Download and Unpack a Package, Download, Unpack and Compile a Package, 
+Download a Package Without Installing, Check Change Log of Package, Check Broken Dependencies, Search and Build Dependencies,
+Auto clean Apt-Get Cache, Auto remove Installed Packages, 
+[
+apt-cache pkgnames, apt-cache search vsftpd, apt-cache show nmap, apt-cache showpkg vsftpd, apt-cache stats, 
+apt-get update, Upgrade Software Packages, apt-get upgrade, apt-get dist-upgrade, apt-get install nmap, 
+apt-get install netcat gcc, apt-get install firefox --no-upgrade, apt-get install firefox --only-upgrade, 
+apt-get install bash-4.4, apt-get remove firefox, apt-get purge firefox, apt-get remove --purge vsftpd, apt-get clean,
+apt-get --download-only source vsftpd, apt-get source vsftpd, apt-get --compile source gcc, apt-get download nmap,
+apt-get changelog vsftpd, apt-get check, apt-get build-dep binutills, apt-get autoclean, apt-get autoremove nessus,
+]
