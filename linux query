@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-*************************************Hey Linux, I need to know something, Are you ready to answer me?************************
+                                  Hey Linux, I need to know something, Are you ready to answer me?
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Tell me where it is:
 Find Files Using Name in Current Directory, Find Files Under Home Directory, Find Files Using Name and Ignoring Case, 
@@ -27,7 +27,8 @@ find / -mtime +20 -mtime -50, find / -cmin -60, find / -mmin -60, find / -amin -
 find / -size +50M -size -100M, find / -size +100M -exec rm -rf {} \;    find / -type f -name *.mp3 -size +10M -exec rm {} \; 
 ]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-*************************************Hi Network How are you?*************************************************************
+                                                    Hi Network How are you?
+**************************************************************************************************************************
 
 Listing all the LISTENING Ports of TCP and UDP connections, Listing TCP Ports connections, Listing UDP Ports connections,
 Listing all LISTENING Connections, Listing all TCP Listening Ports, Listing all UDP Listening Ports, 
@@ -42,8 +43,8 @@ netstat -su, netstat -tp, netstat -ac 5 | grep tcp, netstat -r, netstat -i, nets
 netstat -ap | grep http, netstat --statistics --raw, 
 ]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-------------------------------------Hey I told you to have these package, you did------------------------------------------
-
+                                          Hey I told you to have these package, you did
+***************************************************************************************************************************
 Install a Package with YUM and will ask you, Removing a Package with YUM and ask you, Updating a Package using YUM,
 yum update nmap, List a Package using YUM, Search for a Package using YUM, Get Information of a Package using YUM,
 List all Available Packages using YUM, List all Installed Packages using YUM, Yum Provides Function,
@@ -58,7 +59,8 @@ yum grouplist, yum groupinstall 'Python3.6', yum groupupdate 'Python3.6', yum gr
 yum repolist all, yum --enablerepo=epel install firefox, yum shell, yum clean all, yum history
 ]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-++++++++++++++++++++++++++++++++++++++++++++Hi Linux Can you tell me user specific open files+++++++++++++++++++++++++++++++
+                                        Hi Linux Can you tell me  The user specific open files
+***************************************************************************************************************************
 List User Specific Opened Files, Find Processes running on Specific Port, List Only IPv4 & IPv6 Open Files, 
 List Open Files of TCP Port ranges 1-1024, Find Out who’s Looking What Files and Commands?, List all Network Connections,
 Search by PID, Kill all Activity of Particular User, 
@@ -66,4 +68,17 @@ Search by PID, Kill all Activity of Particular User,
 [
 lsof -u ctrl4c, lsof -i TCP:2232, lsof -i 4, lsof -i TCP:1-1024, lsof -i -u username, lsof -i, lsof -p 1, 
 kill -9 `lsof -t -u username` , 
+]
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                                                    Network Sniffer 
+***************************************************************************************************************************
+Install tcpdump in Linux, Capture Packets from Specific Interface, Capture Only N Number of Packets, 
+Print Captured Packets in ASCII, Display Available Interfaces, Display Captured Packets in HEX and ASCII,
+Capture and Save Packets in a File, Read Captured Packets File, Capture IP address Packets, Capture only TCP Packets, 
+Capture Packet from Specific Port, Capture Packets from source IP, 
+[
+yum install tcpdump, tcpdump -i eth0,  tcpdump -c 10 -i eth0, tcpdump -A -i eth0, tcpdump -D, tcpdump -w rawpkt.pcap -i eth0,
+tcpdump -r rawpkt.pcap, tcpdump -n -i ens192, tcpdump -i ens192 tcp, tcpdump -i ens192 port 2232, 
+tcpdump -i ens192 src 17.24.20.11, 
+
 ]
