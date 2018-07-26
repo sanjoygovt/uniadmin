@@ -687,3 +687,162 @@ cat /etc/mtab |grep -i sda1
 fuser /dev/sda1
 fuser /dev/sda
 ps -ef |grep -i sda
+clear
+cat /etc/passwd
+clear
+netstat -tulpn | grep LISTEN
+yum install lsof
+clear
+firewall-cmd --list
+firewall-cmd --list-ports
+firewall-cmd --list-all
+netstat -tulpn | grep LISTEN
+lsblk
+fuser /dev/sda
+fuser /dev/sda1
+fuser /dev/sda
+fuser -mk /dev/sda -KILL
+fuser /dev/sda
+LSBLK
+lsblk
+pvcreate /dev/sda1
+fdisk /dev/sda
+partprobe
+fdisk -l
+fdisk /dev/sda
+mkfs.xfs /dev/sda1
+fuser /dev/sda
+fuser /dev/sda1
+fuser /dev/sdb
+lsblk
+losetup |grep sda1
+losetup |grep sda
+mkfs.ext4 /dev/sda1
+df -h
+dmesg
+cat /etc/multipath.conf
+dmsetup status
+lsblk
+cat /etc/multipath.conf
+cp /etc/multipath.conf /etc/multipath.conf_bkp
+vi /etc/multipath.conf
+systemctl restart multipath
+systemctl restart multipathd
+lsblk
+mkfs.ext4 /dev/sda1
+clear
+lsblk
+pvcreate /dev/sda1
+mkfs.xfs /dev/sda1
+fuser /dev/sda
+ps -ef |grep -i 9891
+systemctl stop multipathd
+ps -ef |grep -i 9891
+pvcreate /dev/sda1
+fdisk -l
+lsscsi
+lsblk
+fdisk /dev/sd
+fdisk /dev/sda
+partprobe
+lsblk
+fdisk /dev/sda
+fdisk -l
+pvcreate /dev/sda1
+cat /etc/lvm/lvm.conf
+cat /etc/lvm/lvm.conf |grep -i filter
+cat /etc/centos-release
+vi /etc/lvm/lvm.conf
+lsblk
+pvcreate /dev/sda1
+yum info multipath
+yum info device-mapper-multipath
+partprobe
+ls /proc/partitions
+cat /proc/partitions
+pvcreate /dev/sda1
+mkfs.xfs /dev/sda1
+mkfs.ext4 /dev/sda1
+fdisk -l | grep -i /dev/sda
+df -h
+lsblk
+fdisk /dev/sda
+lsblk
+fuser /dev/sda
+pvcreate /dev/sda
+vi /etc/lvm/lvm.conf
+lsblk
+pvcreate /dev/sda
+ip a|grep inet
+init 6
+clear
+lsblk
+pvcreate /dev/sda
+multipath -ll
+lsblk
+cd /dev/mapper/3600a09803830474b4f244c6169696837
+ls -l /dev/mapper/3600a09803830474b4f244c6169696837
+cat /etc/inittab
+systemctl status multipath
+systemctl status multipathd
+systemctl stop multipathd
+systemctl status multipathd
+clear
+lsblk
+pvcreate /devsda
+pvcreate /dev/sda
+fuser /dev/sda
+lsblk
+fdisk /dev/sda
+partprobe
+lsblk
+ls -l /dev/mapper/
+w
+ls -l /dev/sda1
+ls -l /dev/
+clear
+pvcreate -v /dev/sda1
+cat /proc/scsi/scsi
+pvs
+cat /proc/scsi/device_info
+clear
+lsblk
+multipath -ll
+fdisk /dev/sda
+partprobe
+fdisk /dev/sda
+partprobe
+pvcreate /dev/sda1
+lsblk
+cat /etc/centos-release
+vi /etc/lvm/lvm.conf
+fdisk /dev/sda
+partprobe
+parted /dev/sda
+lsblk
+pvcreate /dev/sda
+iscsiadm
+man iscsiad
+man iscsiadm
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --logout
+lsblk
+pvcreate /dev/sda
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --logout
+lsblk
+lsscsi
+pvscan
+yum info device-mapper-multipath
+ps -ef |grep yum
+yum info device-mapper-multipath
+yum remove device-mapper-multipath
+lsblk
+init 6
+history
+clear
+history
+ll
+ls -lrt
+ls -la
+vim .bash_history
+yum install vim
+vim .bash_history
