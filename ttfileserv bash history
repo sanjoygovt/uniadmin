@@ -1,0 +1,689 @@
+    1  service nimbus restart
+    2  exit
+    3  whoami
+    4  vi /etc/sysconfig/network-scripts/ifcfg-eth0
+    5  /etc/init.d/network restart
+    6  ping 144.0.116.30
+    7  ip a
+    8  ifdown eth0
+    9  ifup eth0
+   10  ip a
+   11  ifdown eth1
+   12  ifup eth1
+   13  service network status
+   14  ping 169.38.101.227
+   15  service iptables status
+   16  service firewalld status
+   17  service apf status
+   18  cd /etc/apf
+   19  ls
+   20  less conf.apf
+   21  echo 3:41 PM Tuesday, July 24, 2018 - ChrisM-SL-OUT; exit
+   22  df -h
+   23  useradd digiadminusr
+   24  usermod -G root digiadminusr
+   25  cat /etc/group
+   26  id ot:x:0:digiadminusr
+   27  id digiadminusr
+   28  cd /tmp
+   29  mkdir lssecfix
+   30  cd lssecfix/
+   31  pwd
+   32  exit
+   33  cd /tmp/lssecfix/
+   34  ll
+   35  ./lssecfixes -o secfixdb.RedHat7Server 
+   36  cat /etc/passwd
+   37  passwd digiadminusr
+   38  exit
+   39  cat /etc/sysconfig/network-scripts/route-eth0 
+   40  vi /etc/sysconfig/network-scripts/route-eth0 
+   41  systemctl restart network
+   42  ip route
+   43  ip a
+   44  cat /etc/sudoers
+   45  cat /etc/passwd
+   46  usermod -aG wheel digiadminusr
+   47  cat /etc/sudoers
+   48  vi /etc/sudoers
+   49  exit
+   50  clear
+   51  cat /etc/passwd
+   52  netstat -tulpn | grep LISTEN
+   53  clear
+   54  netstat -tulpn | grep LISTEN
+   55  lsof
+   56  yum install lsof
+   57  clear
+   58  netstat -tulpn | grep LISTEN
+   59  lsof -p 1371
+   60  yum info mysql
+   61* 
+   62  lsof -p 1667
+   63  clear
+   64  firewall-cmd --list-all
+   65  firewall-cmd --get-active-zones
+   66  clear
+   67  history
+==========================================================================================================================
+    1  Nano /opt/nimsoft/robot/robot.cfg
+    2  vi /opt/nimsoft/robot/robot.cfg
+    3  cp robot.cfg robot.bak
+    4  cd /opt
+    5  cd /nimsoft/robot
+    6  cd /nimsoft
+    7  cp robot.cfg robot.bak
+    8  /opt/nimsoft/robot
+    9  clear
+   10  vi /opt/nimsoft/robot/robot.cfg
+   11  /opt
+   12  cp robot.cfg robot.bak
+   13  cd /opt
+   14  cd /nimsoft
+   15  vi /opt/nimsoft/robot/robot.cfg
+   16  service nimbus restart
+   17  exit
+   18  whoami
+   19  vi /etc/sysconfig/network-scripts/ifcfg-eth0
+   20  /etc/init.d/network restart
+   21  exit
+   22  whoami
+   23  ipconfig -a
+   24  uname
+   25  find . -name ipconfig
+   26  ifconfig -a
+   27  find . -name ifconfig
+   28  pwd
+   29  ls -lrt
+   30  hostname
+   31  cd /
+   32  pwd
+   33  ls -lrt
+   34  cd /opt/var
+   35  cd /etc/var
+   36  pwd
+   37  cd /usr/bin
+   38  ls -lrt
+   39  ls -lrt ifco*
+   40  ls -lrt ipc*
+   41  ip a
+   42  ifdown eth0
+   43  ifup eth0
+   44  pi a
+   45  ip a
+   46  ifdown eth1
+   47  ifup eth1
+   48  uname
+   49  whoami
+   50  cd /usr/sbin
+   51  ls -lrt
+   52  ls -lrt pin*
+   53  ping 144.0.1.41
+   54  ping  144.0.116.30
+   55  netstat -rn
+   56  netstat
+   57  ifconfig
+   58  ip a
+   59  route add -net 144.0.0.0 mask 255.255.0.0 gw 10.162.61.129
+   60  su
+   61  ntsysv
+   62  route add -net 144.0.0.0 netmask 255.255.0.0 gw 10.162.61.129
+   63  which route
+   64  hostnamectl 
+   65  sudo route
+   66  which route
+   67  cd /etc
+   68  cd sysconfig/network-scripts/
+   69  ls
+   70  cat route-eth0 
+   71  ls -l
+   72  cat ifcfg-eth1
+   73  cat ifcfg-eth0
+   74  help ip
+   75  ip --help
+   76  ip route --help
+   77  ip route add 144.0.0.0/16 via 10.162.61.129 dev eth0
+   78  rout -n
+   79  route -n
+   80  ip route
+   81  ping 144.0.1.41
+   82  ip route add 176.0.0.0/16 via 10.162.61.129 dev eth0
+   83  ping 176.0.51.1
+   84  ip route add 157.0.0.0/16 via 10.162.61.129 dev eth0
+   85  vi /etc/sysconfig/network-scripts/route-eth0 
+   86  ping 176.0.51.1
+   87  vi /etc/sysconfig/network-scripts/ifcfg-eth0
+   88  systemctl restart network
+   89  ping 144.0.1.41
+   90  whoami
+   91  uname
+   92  cat /etc/passwd
+   93  usermod -aG wheel digidbusr
+   94  exit
+   95  useradd digidbusr
+   96  usermod -aG digidbusr root
+   97  usermod -aG root digidbusr
+   98  passwd digidbusr
+   99  clear
+  100  cat /etc/passwd
+  101  mongo
+  102  clear
+  103  xpack.monitoring.elasticsearch.password: logstashpassword
+  104  clear
+  105  cat /etc/passwd
+  106  elasticsearch
+  107  clear
+  108  elasticsearch
+  109  clear
+  110  cat /etc/passwd
+  111  find / -type -f -name elasticsearch.yml
+  112  find /  -f -name elasticsearch.yml
+  113  find / -type f -name elasticsearch.yml
+  114  vim
+  115  clear
+  116  find / -type f -name elasticsearch.yml
+  117  vim /etc/elasticsearch/elasticsearch.yml
+  118  cd /etc/elasticsearch/
+  119  ll
+  120  ll users
+  121  ll users_roles 
+  122  clear
+  123  find / -type f -name elasticsearch.yml
+  124  clear
+  125  ll
+  126  vim elasticsearch.keystore 
+  127  cat elasticsearch.keystore 
+  128  clear
+  129  ll
+  130  vim role_mapping.yml 
+  131  clear
+  132  ll
+  133  bin/elasticsearch-plugin install x-pack
+  134  clear
+  135  ll
+  136  whereis elasticsearch
+  137  cd /usr/share/elasticsearch
+  138  ll
+  139  cd bin/
+  140  ll
+  141  elasticsearch-setup-passwords
+  142  clear
+  143  ll
+  144  elasticsearch-plugin install x-pack
+  145  clear
+  146  X-Pack
+  147  x-pack
+  148  bin/elasticsearch
+  149  elasticsearch
+  150  history
+  151  clear
+  152  cd ..
+  153  bin/elasticsearch-plugin install x-pack
+  154  bin/x-pack/setup-passwords interactive
+  155  clear
+  156  bin/x-pack/setup-passwords auto|interactive
+  157  bin/x-pack/setup-passwords auto
+  158  clear
+  159  bin/x-pack/users list
+  160  bin/x-pack/users
+  161  bin/x-pack/users list
+  162  bin/x-pack/users list -v
+  163  bin/elasticsearch-setup-passwords
+  164  bin/elasticsearch-setup-passwords interactive
+  165  vim /etc/elasticsearch/elasticsearch.yml 
+  166  systemctl restart elasticsearch.service
+  167  systemctl status elasticsearch.service
+  168  clear
+  169  bin/elasticsearch-setup-passwords interactive
+  170  bin/elasticsearch-setup-passwords auto -u "http://localhost:9200"
+  171  vim /etc/elasticsearch/elasticsearch.yml 
+  172  /bin/elasticsearch
+  173  bin/elasticsearch
+  174  vim /etc/elasticsearch/elasticsearch.yml 
+  175  clear
+  176  GET /
+  177  clear
+  178  /bin/elasticsearch -d -p pid
+  179  bin/elasticsearch -d -p pid
+  180  vim /etc/elasticsearch/elasticsearch.yml 
+  181  systemctl restart elasticsearch.service
+  182  journalctl --unit elasticsearch
+  183  curl -X GET "localhost:9200/"
+  184  curl -X GET "localhost:9200/_xpack/security/_authenticate"
+  185  clear
+  186  curl -X GET "localhost:9200/_xpack/security/_authenticate"
+  187  curl -X POST "localhost:9200/_xpack/security/user/elastic/_password" -H 'Content-Type: application/json' -d'
+{
+  "password": "x-pack-test-password"
+}
+'
+  188  clear
+  189  curl -X POST "localhost:9200/_xpack/security/user/elastic/_password" -H 'Content-Type: application/json' -d'
+{
+  "password": "x-pack-test-password"
+}
+'
+  190  curl -X POST "localhost:9200/_xpack/security/user/elastic/_password" -H 'Content-Type: ap
+password
+help
+  191  clear
+  192  curl -X POST "localhost:9200/_xpack/security/user/elastic/_password" -H 'Content-Type: application/json' -d'
+{
+  "password": "x-pack-test-password"
+}
+'
+  193  POST _xpack/security/user/_password
+  194  curl -X POST "localhost:9200/_xpack/security/user/elastic/_password" -H 'Content-Type: application/json' -d'
+{
+  "password": "July@1234"
+}
+'
+  195  clear
+  196  cat /etc/elasticsearch/users
+  197  cat /etc/elasticsearch/users_roles 
+  198  clear
+  199  vim /etc/elasticsearch/users
+  200  clear
+  201  curl -X POST "localhost:9200/_xpack/security/realm/default_file/_clear_cache"
+  202  clear
+  203  ll
+  204  vim /etc/elasticsearch/elasticsearch.yml 
+  205  clear
+  206  systemctl restart elasticsearch.service
+  207  clear
+  208  curl -X POST "localhost:9200/_xpack/security/user/elastic/_password" -H 'Content-Type: application/json' -d'
+{
+  "password": "x-pack-test-password"
+}
+'
+  209  curl -X POST "localhost:9200/_xpack/security/user/elastic/_password" -H 'Content-Type: application/json' -d'
+{
+  "password": "July@1234"
+}
+'
+  210  clear
+  211  bin/elasticsearch-setup-passwords auto -u "http://localhost:9200"
+  212  /usr/share/elasticsearch/bin/elasticsearch -V
+  213  /usr/share/elasticsearch/bin/elasticsearch-plugin list -v
+  214  curl 'http://localhost:9200/_xpack/license'
+  215  curl 'http://localhost:9200/_xpack?categories=features&pretty'
+  216  sudo /usr/share/elasticsearch/bin/x-pack/setup-passwords interactive
+  217  curl http://127.0.0.1:9200/_xpack/security/_authenticate?pretty
+  218  bin/elasticsearch-setup-passwords auto --url "http://localhost:9200"
+  219  bin/x-pack/users list
+  220  bin/x-pack/users useradd
+  221  bin/x-pack/users passwd elastic
+  222  bin/x-pack/setup-passwords interactive
+  223  bin/x-pack/setup-passwords interactive --verbose
+  224  bin/x-pack/setup-passwords interactive -h
+  225  bin/x-pack/setup-passwords interactive --help
+  226  bin/elasticsearch-plugin install x-pack
+  227  bin/elasticsearch
+  228  clear
+  229  bin/elasticsearch
+  230  sudo bin/elasticsearch
+  231  systemctl status elasticsearch.service
+  232  clear
+  233  sudo bin/elasticsearch
+  234  bin/x-pack/setup-passwords interactive
+  235  sudo bin/elasticsearch-plugin install x-pack
+  236  bin/x-pack/setup-passwords interactive
+  237  clear
+  238  netstat -tulpn | grep LISTEN
+  239  lsof -p1372
+  240  lsof -p 1372
+  241  yum install lsof
+  242  lsof -p 1372
+  243  clear
+  244  cd $HOME
+  245  clear
+  246  firewall-cmd --list-all
+  247  history
+  248  netstat -tulpn | grep LISTEN
+  249  clear
+  250  history
+============================================================================================================================
+service nimbus restart
+fdisk -l
+mount -o loop /dev/sr0 /mnt
+mount -o loop /dev/sr1 /mnt
+hostnamectl
+systemctl start iscsi
+yum install iscsi-initiator-utils
+yum install device-mapper-maltipath
+yum install dev-mapper-m
+yum install device-mapper-multipath
+systemctl start multipathd
+/etc/multipath/
+cd /etc/multipath/
+ll
+multipath -ll
+/etc/multipath.conf --enable
+/etc/mpath.conf --enable
+systemctl start iscsid
+systemctl start iscsi
+man iscsiadm
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117
+targetcli
+yum install targetcli
+targetcli
+systemctl stop firewalld
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187:3260
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187:32
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187/32
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187/32:3260
+ping 10.162.61.187
+setenforce 0
+iscsiadm -m discovery -t st -p 10.162.61.187:3260
+telnet 10.162.61.187:3260
+telnet 10.162.61.187 3260
+yum install telnet
+telnet 10.162.61.187 3260
+telnet 10.162.61.187 32
+systemctl status iscsid
+systemctl status iscsi
+systemctl start iscsi
+systemctl status iscsi
+systemctl status firewalld
+getenforce
+targetcli
+telnet 10.162.61.187 3260
+iscsiadm -m discovery -t st -p 10.162.61.187:3260
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187:3260
+systemctl stop iscsi
+systemctl stop iscsid
+systemctl status iscsid
+systemctl stop iscsi
+systemctl status iscsi
+ps -ef |grep 9612
+systemctl start iscsi
+systemctl status iscsi
+cat /etc/iscsi/initiatorname.iscsi
+history |grep 3260
+clear
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187:22
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187:3260
+clear
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187:3260
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187:2049
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187:11
+iscsiadm -m discovery -t sendtargets -p 10.162.61.187:111
+ip a|grep inet
+cat /etc/yum.repos.d/CentOS-Base.repo
+nmtui
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
+systemctl reload network
+/etc/init.d/network restart
+ifconfig
+ip a
+exit
+ip a
+ifdown eth0
+ifup eth0
+history
+nmap -p 3260 10.162.61.187
+telnet
+telnet 10.162.61.187 3260
+ping 10.162.61.187
+exit
+ip a
+ping 10.200.30.117
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+systemctl status iscsi
+systemctl status iscsid
+systemctl status firewalld
+hostname
+yum remove iscsi-initiator-utils
+systemctl status iscsid
+systemctl status iscsi
+yum install iscsi-initiator-utils
+systemctl status iscsi
+systemctl status iscsid
+systemctl restart iscsid
+systemctl restart iscsi
+systemctl status iscsid
+systemctl status iscsi
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+setenforce 0
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+systemctl stop iscsi
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+systemctl start iscsi
+ping 10.200.30.117
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+exit
+cd /etc/iscsi
+ls -l
+cat initiatorname.iscsi
+cat /etc/iscsi/iscsid.conf
+cat /etc/iscsi/iscsid.conf
+multipath -l
+uname -r
+modprobe dm-multipath
+systemctl start multipathd
+systemctl enable multipathd
+multipath -l
+cat /etc/multipath.conf
+touch /etc/multipath.conf
+vi /etc/multipath.conf
+systemctl restart multipathd
+multipath -l
+multipath -ll
+cat /etc/iscsi/initiatorname.iscsi
+cd /etc/iscsi/
+ls -l
+cp iscsid.conf iscsid.conf.backup_before_configuration
+vi iscsid.conf
+systemctl enable iscsi
+systemctl enable iscsid
+systemctl start iscsi
+systemctl start iscsid
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+iscsiadm -m node -L automatic
+iscsiadm -m session
+multipath -l
+multipath -ll
+exit
+ping 10.200.30.117
+vi /etc/iscsi/initiatorname.iscsi
+cat /etc/iscsi/initiatorname.iscsi
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3296
+systemctl restart iscsi
+systemctl restart iscsid
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3296
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 0.796/0.866/0.936/0.070 ms
+[root@DIGISETFILE ~]# vi /etc/iscsi/initiatorname.iscsi
+[root@DIGISETFILE ~]# cat /etc/iscsi/initiatorname.iscsi
+InitiatorName=iqn.2018-07.com.ibm:ibm02su1696505-v58410661
+[root@DIGISETFILE ~]# iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3296
+iscsiadm: cannot make connection to 10.200.30.117: Connection refused
+[root@DIGISETFILE ~]# systemctl restart iscsi
+[root@DIGISETFILE ~]# systemctl restart iscsid
+[root@DIGISETFILE ~]# iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3296
+iscsiadm: cannot make connection to 10.200.30.117: Connection refused
+iscsiadm: connection login retries (reopen_max) 5 exceeded
+iscsiadm: Could not perform SendTargets discovery: encountered connection failure
+[root@DIGISETFILE ~]#
+[root@DIGISETFILE ~]# iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+systemctl status firewalld
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+firewall-cmd --add-port=3260/tcp --permanent
+systemctl start firewalld
+firewall-cmd --add-port=3260/tcp --permanent
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+telnet 10.200.30.117 3260
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+iscsiadm -m discovery -t st -p 10.200.30.117:3260
+firewall-cmd --list-all
+iscsiadm -m discovery -t st -p 10.200.30.117:3260
+cat /etc/iscsi/initiatorname.iscsi
+ping  10.200.30.117
+vi /etc/hosts
+r
+vi /etc/hosts
+iscsiadm -m discovery -t st -p 10.200.30.117:3260
+systemctl restart iscsi
+systemctl restart iscsid
+systemctl stop iscsid
+systemctl stop iscsi
+iscsiadm -m discovery -t st -p 10.200.30.117:3260
+pi a
+ip a
+history
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+cat /etc/iscsi/initiatorname.iscsi
+exit
+cat /etc/passwd
+usermod -aG wheel digiflusr
+cat /etc/group
+exit
+cat /etc/iscsi/initiatorname.iscsi
+history
+cat /etc/iscsi/initiatorname.iscsi
+cat /etc/iscsi/initiatorname.iscsi
+iscsiadm -m discovery -t st -p 10.200.30.117:3260
+lsblk
+dmesg
+dmesg |grep Attached
+lsblk
+useradd digiflusr
+usermod -aG root digiflusr
+id digiflusr
+passwd digiflusr
+lsblk
+history
+ iscsiadm -m discovery -t st -p 10.200.30.117:3260
+man iscsiadm
+lsblk
+ iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --logout
+lsblk
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --login
+lsblk
+pvcreate sda
+pvcreate /dev/sda
+yum install lvm2
+pvcreate /dev/sda
+lsblk
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --logout
+lsblk
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --login
+lsblk
+fdisk -l
+fdisk /dev/sda
+lsblk
+pvcreate /dev/sda1
+cat /etc/lvm/lvm.conf
+cat /etc/lvm/lvm.conf  |grep sd
+cat /etc/lvm/lvm.conf  |grep dev
+cat /etc/lvm/lvm.conf  |grep -i filter
+dmesg
+mkfs.xfs /dev/sda1
+ps -ef |grep /dev/sda1
+pwd
+mkfs -t xfs /dev/sda1
+fdisk -l
+fdisk /dev/sda
+pvcreate /dev/sda
+pvscan -vv
+pvcreate /dev/sda
+cat /etc/lvm/lvm.conf  |grep -i filter
+history
+yum install lvm2*
+pvcreate /dev/sda
+cd /etc/lvm/cache/
+ll
+cd ..
+cat lvm.conf
+vi lvm.conf
+pvcreate /dev/sda
+pvcreate /dev/sdb
+yum remove lvm2
+cd /etc/lvm/
+ll
+cat lvm.conf.lvmconfold
+cat lvm.conf.lvmconfold |grep -i filter
+clear
+fdisk /dev/sda
+fdisk -l
+yum install lvm2-2.02.171-8.el7.x86_64
+rpm -qa lvm2
+yum info lvm2
+yum reinstall lvm2
+yum install lvm2
+rpm -ql lvm2.x86_64
+rpm -ql lvm2.x86_64 |less
+lsblk
+pvcreate /dev/sda1
+df -h
+mkfs.xfs /dev/sda1
+mkfs -t xfs /dev/sda1
+fuser /dev/sdb1
+fuser /dev/sdb
+pvcreate /dev/sda1
+cat /etc/passwd
+ip a|grep inet
+hostname
+cat /etc/group
+cat /etc/sysconfig/network-scripts/route-eth0
+pwd
+vi /etc/sysconfig/network-scripts/route-eth0
+ip route
+systemctl restart network
+ip route
+ip a
+vi /etc/sysconfig/network-scripts/ifcfg-eth
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
+ping www.google.com
+lsblk
+fdisk -l
+pvcreate /dev/mapper/3600a09803830474b4f244c6169696837p1
+pvcreate /dev/sda
+dmesg
+getenforce
+getenforce |grep -i sda
+ifconfig
+cat /etc/centos-release
+runlevel
+lsof /dev/sd
+lsof /dev/sda
+lsscsi
+partprobe /dev/sda
+pvcreate /dev/sda
+tail -f /var/log/messages
+lsblk
+partprobe /dev/sda1
+pvcreate /dev/sda1
+pvcreate /dev/mapper/3600a09803830474b4f244c6169696837
+partprobe /dev/mapper/3600a09803830474b4f244c6169696837
+partprobe /dev/mapper/3600a09803830474b4f244c6169696837
+pvcreate /dev/mapper/3600a09803830474b4f244c6169696837
+yum reinstall lvm2
+partprobe /dev/sda1
+pvcreate /dev/sda1
+dmesg
+dmesg |grep -i sda
+history
+  227  lsblk
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --logoout
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --logout
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --login
+systemctl restart iscsid
+systemctl restart iscsi
+iscsiadm -m discovery -t sendtargets -p 10.200.30.117:3260
+iscsiadm --mode node --targetname iqn.1992-08.com.netapp:stmche0101  --portal 10.200.30.117:3260 --login
+lsblk
+partprob /dev/sda
+partprobe /dev/sda
+pvcreate /dev/sda
+cd /etc/lvm/lvm.conf
+cat /etc/lvm/lvm.conf
+cat /etc/lvm/lvmlocal.conf
+cat /etc/mtab
+cat /etc/mtab |grep -i sda
+cat /etc/mtab |grep -i sda1
+fuser /dev/sda1
+fuser /dev/sda
+ps -ef |grep -i sda
