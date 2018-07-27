@@ -157,7 +157,7 @@ du -mh /home/user, du -ch /home/user, du -ah --exclude="*.txt" /home/user, du -h
 df, df -a, df -h, df -hT /home, df -k, df -m, df -h, df -i, df -T,  df -t ext3, df -x ext3, 
 ]
 lsblk -io KNAME,TYPE,SIZE,MODEL
-
+lshw -class disk
 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
                                                   Advanced Packaging Tool | dpkg 
 - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
