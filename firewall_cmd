@@ -8,7 +8,7 @@ firewall-cmd --zone=public --list-ports, firewall-cmd --zone=public --permanent 
 
 firewall-cmd --permanent --zone=trusted --add-rich-rule='
   rule family="ipv4"
-  source address="169.38.101.227"
+  source address="192.38.11.22"
   port protocol="tcp" port="9200" accept'
 
 cat /etc/firewalld/zones/public.xml, firewall-cmd --reload, firewall-cmd --permanent --zone=trusted --add-interface=lo,
