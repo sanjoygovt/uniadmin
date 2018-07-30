@@ -1,0 +1,6 @@
+
+
+[yum install firewalld, systemctl enable firewalld, firewall-cmd --state, firewall-cmd --get-default-zone,
+firewall-cmd --get-active-zones, firewall-cmd --list-all, firewall-cmd --get-zones, firewall-cmd --zone=home --list-all,
+firewall-cmd --list-all-zones | less, firewall-cmd --get-services, firewall-cmd --zone=public --list-services,
+firewall-cmd --zone=public --permanent --list-services, ]
