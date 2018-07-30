@@ -5,6 +5,7 @@ Get System Info: Ubuntu/Centos
 lsb_release -a  : To check OS details
 uname -a        : To check kernel version & architecture
 cat /etc/redhat-release : To check OS version
+cat /etc/*release
 ===========================================================
 Time & Date:
 date  : To check current date & time
