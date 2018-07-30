@@ -14,5 +14,7 @@ firewall-cmd --permanent --zone=trusted --add-rich-rule='
 cat /etc/firewalld/zones/public.xml, firewall-cmd --reload, firewall-cmd --permanent --zone=trusted --add-interface=lo,
 firewall-cmd --permanent --zone=trusted --add-port=9200/tcp
 
+firewall-cmd --permanent --zone=public --list-sources, firewall-cmd --permanent --zone=public --add-source=192.168.1.0/24,
+firewall-cmd --reload, firewall-cmd --zone=public --list-all
 
 ]
