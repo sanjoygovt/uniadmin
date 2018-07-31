@@ -17,7 +17,7 @@ find . -name httpd.conf, find /home -name manual.txt, find /home -iname manual.t
 find . -type f -name index.html, find . -type f -name "*.conf", find / -type f -perm 0777 -print,
 find . -type f -perm 0777 -print, find / -type f ! -perm 777, find / -perm /u=r, find / -perm /a=x, 
 find / -type f -perm 0777 -print -exec chmod 644 {} \;   find / -type d -perm 777 -print -exec chmod 755 {} \; 
-find . -type f -name "tecmint.txt" -exec rm -f {} \; 
+find . -type f -name "abc.txt" -exec rm -f {} \; 
 # find . -type f -name "*.txt" -exec rm -f {} \; 
 OR
 # find . -type f -name "*.mp3" -exec rm -f {} \;    
