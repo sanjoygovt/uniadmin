@@ -69,4 +69,9 @@ Using Groups to Give Read/Write Access to User on Directory, Determine the File 
 Using lsblk Command, Using mount Command, Find Out Installed or Removed Packages Info, View Complete YUM History, 
 Use Yum to Find Package Info, Use Yum History to Find Package Transaction Info, Use Yum to Rollback Packages,
 Find Yum History Database and Sources Info, Auto Execute Commands/Scripts During Reboot or Startup, 
-Executing Linux Scripts During Reboot or Startup, Executing Linux Scripts at Logon and Logout, 
+Executing Linux Scripts During Reboot or Startup, Executing Linux Scripts at Logon and Logout, Create a Shared Directory for All Users
+Check Remote Ports are Reachable Using ‘nc’ Command, Run ‘sudo’ Command Without Entering a Password, Redirect Standard Output to File
+Find Number of Files in a Directory and Subdirectories, Set Date and Time for Each Command You Execute in Bash History,
+Redirect Standard Error to File, Redirect Standard Output/ Error To One File, Redirect Standard Input to File,
+Redirect Standard Input/Output to File, 
+
