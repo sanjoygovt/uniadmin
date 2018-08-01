@@ -30,4 +30,7 @@ Download and Extract File Using Wget Command, Download and Extract File Using cU
 Using dig Utility, Using host Utility, Using wget Command Line Downloader, Using cURL Command Line Downloader,
 Run Shell Scripts with Sudo, Enabling YUM Plug-ins, Make File and Directory Undeletable, Even By Root, Match Characters Set in Linux
 Recursively Make Directory Undeletable, Match Filenames Using Wildcards, Combine Wildcards to Match Filenames, 
-
+Find Open Ports, List All Opened Ports, List Listening or Opened Ports, List IPv4 Opened Ports, List IPv6 Opened Ports, 
+List TCP or UDP Opened Ports, List TCP and UDP Specific Port Numbers, List Opened and Connected Ports, List Network Listening Ports,
+List Unix Sockets and Named Pipes, List Ports Opened by Application, List HTTPS Connected Protocols, List HTTP Remote Sockets,
+Find Highest HTTP Requests By IP Addresses, List DNS Opened Sockets, Query TCP DNS on Local Domain, 
