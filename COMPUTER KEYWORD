@@ -40,4 +40,5 @@ Rename All Files and Directory Names to Lowercase, Using find, xargs and rename 
 Linux Process Monitoring, List All Processes in Current Shell, Print All Processes in Different Formats,
 Display User Running Processes, Print All Processes Running as Root, Display Group Processes, Display Processes by PID and PPID,
 Display Processes by TTY, Print Process Tree, Print Process Threads, Specify Custom Output Format, Print Security Information,
-Display Parent and Child Processes, Troubleshoot Linux System Performance, 
+Display Parent and Child Processes, Troubleshoot Linux System Performance, Perform Real-time Process Monitoring Using Watch Utility,
+Block or Disable Normal User Logins, Block User Logins Using /etc/nologin File, 
