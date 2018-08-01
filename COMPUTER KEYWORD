@@ -33,4 +33,6 @@ Recursively Make Directory Undeletable, Match Filenames Using Wildcards, Combine
 Find Open Ports, List All Opened Ports, List Listening or Opened Ports, List IPv4 Opened Ports, List IPv6 Opened Ports, 
 List TCP or UDP Opened Ports, List TCP and UDP Specific Port Numbers, List Opened and Connected Ports, List Network Listening Ports,
 List Unix Sockets and Named Pipes, List Ports Opened by Application, List HTTPS Connected Protocols, List HTTP Remote Sockets,
-Find Highest HTTP Requests By IP Addresses, List DNS Opened Sockets, Query TCP DNS on Local Domain, 
+Find Highest HTTP Requests By IP Addresses, List DNS Opened Sockets, Query TCP DNS on Local Domain, lslogins Command,
+Find User Account Info and Login Details, id Command, groups Command, finger Command, getent Command, grep Command, users Command,
+who Command, w Command, last or lastb commands, lastlog Command, 
