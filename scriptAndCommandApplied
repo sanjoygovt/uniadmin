@@ -50,5 +50,11 @@ l=`grep -c "." $file`
 echo Number of characters in $file is $c
 echo Number of words in $file is $w
 echo Number of lines in $file is $l
+-------------------------------------------------
+To remove all the files with filenames starting with "k" or "K" in the current
+working directory:
+rm -rf a*
+find . -type f -name a\* -exec rm {} \;
+find . -name "a*" -exec rm {} \;
 
 
