@@ -88,7 +88,19 @@ else
   echo "the file does not exist!"
 fi
 --------------------------------------------------------
-
+To create another link to the existing file:
+ln -s shell3.sh shell7.sh
+---------------------------------------------------------
+To count the number of files in the current directory:
+ls -l | wc -l
+--------------------------------------------------------------
+To split a file with each file containing 5 lines:
+ split -l 5 lastmodify.sh
+------------------------------------------------------------------------
+To translate characters from upper case to lower case of any text file:
+ tr '[:upper:]' '[:lower:]' < a.txt
+ tr A-Z a-z < a.txt
+------------------------------------------------------------------------- 
 
 
 
