@@ -29,4 +29,9 @@ tree -P 'abc*'  # list directory tree of file starting with abc---
 tree -l 'def*'  # exclude files starting with def---
 $ python -c 'import sys,os;found=[os.path.join(r,i) for r,s,f in os.walk(".")
 for i in f if i.startswith("sh")];map(lambda x: sys.stdout.write(x+"\n") ,found)'
-
+$ perl -le 'use File::Find;find(sub{ -f && $_ =~/^ABC/ && print $File::Find::name  },".")' 
+-------------------------------------------------------------------------------------------
+Write a grep command to select the lines from a file that has exactly
+3 characters:
+grep -c -E "^.{3}$" shell1.sh
+awk '{if(length($0) == 3) print}' shell1.sh
