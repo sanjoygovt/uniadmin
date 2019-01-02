@@ -134,5 +134,15 @@ Write a shell program, using "grep" to find the number of occurrences of a strin
 "and" in a text file and display its count:
 find . -name "*.txt" -exec cat {} + | grep -ic abc
 ------------------------------------------------------------------------------------
+#Write a shell program to swap the values of the variables "a" and "b":
 
-
+echo "Enter value for x : "
+read x
+echo "Enter value for y : "
+read y
+echo "Before swap, x = $x and y = $y"
+z=$x
+x=$y
+y=$z
+echo "After swap, x = $x and y = $y"
+---------------------------------------------------------
