@@ -101,6 +101,16 @@ To translate characters from upper case to lower case of any text file:
  tr '[:upper:]' '[:lower:]' < a.txt
  tr A-Z a-z < a.txt
 ------------------------------------------------------------------------- 
-
-
+#Write a shell program to combine any 2 files into a single file:
+echo Enter first filename
+read first
+echo Enter second filename
+read second
+cat $first > third
+cat $second >> third
+echo After concatination of contents of entered two files
+echo ----------------------------------------------------
+cat third | more
+echo ----------------------------------------------------
+----------------------------------------------------------------------------
 
