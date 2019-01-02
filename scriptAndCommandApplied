@@ -129,5 +129,10 @@ then
 fi
 
 cat $file | tr '[A-Z]' '[a-z]'
+------------------------------------------------------------------------------------
+Write a shell program, using "grep" to find the number of occurrences of a string
+"and" in a text file and display its count:
+find . -name "*.txt" -exec cat {} + | grep -ic abc
+------------------------------------------------------------------------------------
 
 
