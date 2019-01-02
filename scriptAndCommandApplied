@@ -56,5 +56,25 @@ working directory:
 rm -rf a*
 find . -type f -name a\* -exec rm {} \;
 find . -name "a*" -exec rm {} \;
+find . -name "a*" -type f -delete
+--------------------------------------------------------------------
+To see octal pemission of any files:
+stat -c "%a %n" *
+-----------------------------------------------------------
+To display the inode no. of any file:
+ls -i /etc/passwd
+ls -il
+-----------------------------------------------------------
+To copy all the files in PWD to a new folder:
+ cp -R mcs041/ mcs
+---------------------------------------------------------
+To append contents of filet to filel:
+cat appendfil.sh >> shell3.sh
+--------------------------------------------
+To display the status of all the processes:
+ps -aux | less/more
+
+
+
 
 
