@@ -113,4 +113,21 @@ echo ----------------------------------------------------
 cat third | more
 echo ----------------------------------------------------
 ----------------------------------------------------------------------------
+To combine multiple files/directories into single archive:
+tar cf archive.tar  third a.txt
+----------------------------------------------------------------
+Write a shell program to translate all the characters to lower case in any given
+text file:
+sun@ubuntu:~/mcs041$ cat upper2lower.sh
+echo -n "Enter a text file name : "
+read file
+
+if [ ! -f $file ]
+then
+ echo "$file not a file!"
+ exit 1
+fi
+
+cat $file | tr '[A-Z]' '[a-z]'
+
 
