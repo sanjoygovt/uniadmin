@@ -35,3 +35,20 @@ Write a grep command to select the lines from a file that has exactly
 3 characters:
 grep -c -E "^.{3}$" shell1.sh
 awk '{if(length($0) == 3) print}' shell1.sh
+-------------------------------------------------------------------------
+Compare the two text files and display the first difference. 
+diff lastmodify.sh shell1.sh
+diff -q lastmodify.sh shell1.sh
+cmp lastmodify.sh shell1.sh
+-------------------------------------------------
+#Shell program to count the characters, count the lines and the words in a particular file:
+echo Enter the filename
+read file
+w=`cat $file | wc -w`
+c=`cat $file | wc -c`
+l=`grep -c "." $file`
+echo Number of characters in $file is $c
+echo Number of words in $file is $w
+echo Number of lines in $file is $l
+
+
