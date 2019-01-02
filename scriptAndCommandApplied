@@ -12,3 +12,21 @@ fi
 
 # use stat command to display
 echo "$fileName was last modified on $(stat -c %x $fileName)"
+-------------------------------------------------------------------
+displays the last modification time of any file.
+stat -c %x lastmodify.sh
+------------------------------------------------------------------
+To display all the files whose filename starts with "sh"
+touch shell1.sh shell2.sh shell3.sh
+ls sh*
+ls s*
+find . -type f -name "s*"
+ls | grep sh
+ls abc*   # list all files starting with abc---
+ls *abc*  # list all files containing --abc--
+ls *abc   # list all files ending with --abc
+tree -P 'abc*'  # list directory tree of file starting with abc---
+tree -l 'def*'  # exclude files starting with def---
+$ python -c 'import sys,os;found=[os.path.join(r,i) for r,s,f in os.walk(".")
+for i in f if i.startswith("sh")];map(lambda x: sys.stdout.write(x+"\n") ,found)'
+
