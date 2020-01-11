@@ -23,6 +23,21 @@ chown root:username /dir/dir :own a directory
 groups  :show which group
 
 =============================================================================================
+Samba Configuration:
+nano /etc/samba/smb.conf
+------------------
+[SambaShare]
+broweable = yes
+path = /root/share
+read only = no
+----------------
+smbpasswd -a root
+chmod 777 share/
+chown root:newuser share
+systemctl status/start/stop/restart/enable smbd.service 
+systemctl status/start/stop/restart/enable nmbd.service 
+ln -s /root/share /root/Desktop/  : shortcut
+=============================================================================================
 Package Management: CentOS
 everything can be found for centos: http://mirror.centos.org/centos/6.9/os/x86_64/Packages/
 rpm -i rpmfilename.rpm  :To install a rpm file
