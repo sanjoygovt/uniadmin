@@ -10,8 +10,7 @@ cat /etc/*release
 Time & Date:
 date  : To check current date & time
 hwclock : To check current date & time
-==============================================================
-User Management:
+=========================================USER MANAGEMENT=======================================================================
 useradd -m new_username      :create a new user
 passwd new_username          :set password for new username
 usermod -a -g sudo username     :User can access sudo
@@ -22,8 +21,7 @@ awk -F':' '{ print $1}' /etc/passwd :show all users
 chown root:username /dir/dir :own a directory
 groups  :show which group
 
-=============================================================================================
-Samba Configuration:
+===========================================SAMBA CONFIG=====================================================================
 nano /etc/samba/smb.conf
 ------------------
 [SambaShare]
@@ -37,8 +35,8 @@ chown root:newuser share
 systemctl status/start/stop/restart/enable smbd.service 
 systemctl status/start/stop/restart/enable nmbd.service 
 ln -s /root/share /root/Desktop/  : shortcut
-=============================================================================================
-Package Management: CentOS
+==============================================PACKAGE MANAGEMENT CentOS======================================================
+
 everything can be found for centos: http://mirror.centos.org/centos/6.9/os/x86_64/Packages/
 rpm -i rpmfilename.rpm  :To install a rpm file
 rpm -ivh rpmfilename.rpm  : Install rpm file with hash and verbose
@@ -69,7 +67,7 @@ yum-config-manager --add-repo https://www.pqr.com/filename.repo
 yum-config-manager --enable repository 
 yum-config-manager --enable repository
 
-Package Management: Ubuntu
+==============================================PACKAGE MANAGEMENT Ubuntu======================================================
 dpkg -i filename.deb  :Installing a .deb files
 dpkg-reconfigure -a
 dpkg --configure -a
@@ -79,8 +77,7 @@ apt autoremove  :autoremove all unnecessary files
 apt --fix-missing install
 apt-get install -f
 apt-get update --fix-missing
-================================================================================
-Basic Commands:
+========================================BASIC COMMANDS=========================================================================
 cd :go to another directory
 ls :list files
 ls -ld .* :To find .filename file
@@ -122,9 +119,8 @@ grep
 dmidecode -t system :bios version
 dmidecode -t bios
 dmidecode -t processor
-============================================================================
-Network Administration:
-----------------------------------------------------------------------------
+=========================================NETWORK ADMINI======================================================================
+----------------------------------------------------------------------------------------------------------------------------
 ifconfig   : ip address details
 ifconfig -a
 ip address
@@ -144,16 +140,30 @@ netstat -n | more
 netstat -sp 45.114.142.178
 netstat -tnlp
 traceroute ip
-======================================
-Disk Management:
+============================================STATIC IP CONFIG===================================================================
+ifconfig eth1 192.168.0.20 netmask 255.255.255.0 up
+route add default gw 192.168.0.1
+ip addr show
+ip link set eth1 up
+ip route show
+ip r
+ip a
+systemctl status/start/restart/enable NetworkManager
+-------------------------------------
+nano /etc/network/interfaces
+auto eth1
+iface eth1 inet static
+address 192.168.0.20/24
+gateway 192.168.0.1
+systemctl restart networking.service
+======================================DISK MANAGEMENT==========================================================================
 du
 df -h
 free -m
 fdisk -l
 mount /dev/cdrom /tmp/cd
 unmount /tmp/cd
-========================================================================
-Firewall/Iptables Management:
+=====================================FIREWALL/IPTABLES MANAGEMENT==============================================================
 iptables location:
 /etc/sysconfig/iptables (CentOS)
 iptables -L
@@ -168,8 +178,7 @@ firewall-cmd --list-all
 firewall-cmd --zone=public --add-port=2233/tcp : adding rule
 firewall-cmd --permanent --zone=public --add-service=(service name)
 firewall-cmd --reload
-=========================================================================
-Service management:
+======================================SERVICE MANAGEMENT======================================================================
 service --status-all    : To list all services in the system
 service service_name status/start/stop :Service handling
 
@@ -185,8 +194,7 @@ systemctl list-units --type service
 systemctl list-units --type service --all
 systemctl list-unit-files --type service
 
-=======================================================================
-Process Management:
+======================================PROCESS MANAGEMENT=======================================================================
 ps -A  :List all processes
 ps -auxf
 ps -auxf | grep demo
@@ -195,22 +203,19 @@ kill -9 pidno :To kill a process
 pidof processname
 lsof -p idname
 (pkill,kill -SIGTERM 3139,killall service_name,
-=======================================================================
-Cron jobs management:
+=====================================CRON JOB MANAGEMENT======================================================================
 crontab -l  :view cron jobs
 crontab -e  :edit cron jobs
-=======================================================================
+=============================================================================================================================
 Root Access:
 sudo -i : turn to root 
 su username
 su -   :bash shell
-=============================================================================
-Archive File Management:
+=====================================ARCHIVE FILE MANAGEMENT=================================================================
 tar -xvf tar.gzfile  : extract a archive file (tar.gz, .tgz, .tar.bz2, etc.)
 zip -r filename.zip  : archive a folder/directory
 unzip zipfilename    : extract zip file
-=============================================================================
-Apache server management:
+====================================APACHE SERVER MANAGEMENT=================================================================
 apachectl status
 apachectl start
 service httpd status :To check apache httpd service status
@@ -228,7 +233,7 @@ service httpd configtest
 /etc/httpd/conf :Location httpd config file
 /etc/httpd/conf/conf.d :Location httpd config file
 
-==============================================================================
+===============================================================================================================================
 Setting default python:
 python 2.6 to 3.6
 alias python=/usr/local/bin/python3.6
@@ -236,8 +241,7 @@ alias python=/usr/local/bin/python3.6
 Connect two pc using netcat:
 1st pc: nc -l 1234
 2nd pc: nc 192.168.0.0 1234
-==============================================================================
-Hardware Information:
+====================================HARDWARE INFORMATION==========================================================
 lsusb :list usb installed
 lshw  :list hardware information
 lscpu :Get cpu info
