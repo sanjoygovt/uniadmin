@@ -69,6 +69,7 @@ yum-config-manager --enable repository
 
 ==============================================PACKAGE MANAGEMENT Ubuntu======================================================
 dpkg -i filename.deb  :Installing a .deb files
+dpkg -l | grep (appname)
 dpkg-reconfigure -a
 dpkg --configure -a
 apt install package_name
