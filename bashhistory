@@ -211,7 +211,7 @@ ls -l
 mkdir datathon
 ls -l
 
-git clone https://github.com/somnetics/datathon.git
+git clone https://github.com/vm999.git
 ls -l
 cd datathon/
 ls
@@ -238,7 +238,7 @@ vi firewalld
 cd /var/www/html/
 mkdir bengal_athon
 cd bengal_athon/
-git clone https://github.com/somnetics/bengal_athon.git
+git clone https://github.com/vm999
 firewall-cmd --permanent --zone=public --add-port=2232/tcp
 systemctl start firewalld.service
 firewall-cmd --permanent --zone=public --add-port=2232/tcp
