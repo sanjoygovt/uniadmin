@@ -1,6 +1,6 @@
 exit
 cd /var/www/html/
-cd seamless/
+cd vm999/
 git status
 git add application/models/kms_document/kms_document_model.php
 git commit -m "curl version options"
@@ -8,25 +8,25 @@ gut push
 git push
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
-/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext
-/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf 
-cd /var/www/html/seamless/system/core/plugins/gfPDF/xpdf
+/var/www/html/vm999/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
+/var/www/html/vm999/system/core/plugins/gfPDF/xpdf/pdftotext
+/var/www/html/vm999/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf 
+cd /var/www/html/vm999/system/core/plugins/gfPDF/xpdf
 ls
-pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf
-pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
- /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf
+pdftotext /var/www/html/vm999-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf
+pdftotext /var/www/html/vm999-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
+ /var/www/html/vm999-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf
 cd ..
 ls
 cd ..
 ls
-/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf 
-system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf 
+/var/www/html/vm999/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/vm999-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf 
+system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/vm999-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf 
 cls
 clear
 yum search glibc.i686
@@ -38,14 +38,14 @@ yum search glibc
 yum install glibc
 pkcon install glibc.i686
 sudo yum install glibc.i686
-/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
+/var/www/html/vm999/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/vm999-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
 yum install libstdc++.i686
-/var/www/html/seamless/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/idoc-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
+/var/www/html/vm999/system/core/plugins/gfPDF/xpdf/pdftotext /var/www/html/vm999-repository/documents/ef963821-a22c-4de8-b83f-2572b2ba98eb.pdf -
 exit
-cd /var/www/html/seamless
+cd /var/www/html/vm999
 git pull
 exit
-cd /var/www/html/seamless
+cd /var/www/html/vm999
 git pull
 exit
 libreoffice
@@ -56,20 +56,20 @@ libreoffice --version
 yum install libreoffice-writer
 exit
 cd /var/www/html/idoc-repository/
-sudo soffice --headless --convert-to pdf /var/www/html/idoc-repository/test.ppt --outdir /var/www/html/idoc-repository/
+sudo soffice --headless --convert-to pdf /var/www/html/vm999-repository/test.ppt --outdir /var/www/html/vm999-repository/
 yum install libreoffice-impress
- soffice --headless --convert-to pdf /var/www/html/idoc-repository/test.ppt --outdir /var/www/html/idoc-repository/
-soffice --headless --convert-to pdf /var/www/html/idoc-repository/te.xlsx --outdir /var/www/html/idoc-repository/
+ soffice --headless --convert-to pdf /var/www/html/vm999-repository/test.ppt --outdir /var/www/html/vm999-repository/
+soffice --headless --convert-to pdf /var/www/html/vm999-repository/te.xlsx --outdir /var/www/html/vm999-repository/
 yum install libreoffice-calc
-soffice --headless --convert-to pdf /var/www/html/idoc-repository/te.xlsx --outdir /var/www/html/idoc-repository/
-soffice --headless --convert-to pdf /var/www/html/idoc-repository/pp.xlsx --outdir /var/www/html/idoc-repository/
-soffice --headless --convert-to pdf /var/www/html/idoc-repository/pp.xls --outdir /var/www/html/idoc-repository/
+soffice --headless --convert-to pdf /var/www/html/vm999-repository/te.xlsx --outdir /var/www/html/vm999-repository/
+soffice --headless --convert-to pdf /var/www/html/vm999-repository/pp.xlsx --outdir /var/www/html/vm999-repository/
+soffice --headless --convert-to pdf /var/www/html/vm999-repository/pp.xls --outdir /var/www/html/vm999-repository/
 exit
 cd /var/www/html/
 ll
-zip seamless/
-gzip seamless/
-gzip -r seamless/
+zip vm999/
+gzip vm999/
+gzip -r vm999/
 exit
 service iptables restart
 sysctl -w net.ipv6.conf.default.disable_ipv6=1
@@ -79,7 +79,7 @@ sysctl -w net.ipv6.conf.default.disable_ipv6=1
 sysctl -w net.ipv6.conf.all.disable_ipv6=1
 service iptables restart
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git status
 git update-index --assume-unchanged system/core/libs/license.manager.class.php
 git status
@@ -91,10 +91,10 @@ rm -r d/
 rm -rf d/
 rm -rf bk/
 clear
-mysqldump -u root --password=hG53LJVO6UbOAK28 --events seamless | bzip2 > /var/www/html/database_backup/seamless_`date +%d_%m_%Y`.sql.gz
+mysqldump -u root --password=hG53LJVO6UbOAK28 --events vm999 | bzip2 > /var/www/html/database_backup/vm999`date +%d_%m_%Y`.sql.gz
 exit
 cd /var/www/html/
-cd seamless/
+cd vm999/
 ls
 git status
 git checkout application/views/header.html
@@ -104,30 +104,30 @@ git status
 git pull
 exit
 git status
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git status
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git status
 git fetch
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git add application/models/lms_issue_management
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 git status
 git pull
 exit
 git pull
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
 netstat -ntlp | grep 25
-cd /var/www/html/imailservice/
+cd /var/www/html/vm999/
 ls
 pwd
 tailf /var/log/maillog
@@ -141,7 +141,7 @@ vi /etc/sysctl.conf
 sysctl -p
 ifconfig 
 telnet smtp.gmail.com 25
-mail -v asritha.s@ctrls.in
+mail -v vm999.s@ctrls.in
 tailf /var/log/maillog
 vi /var/log/maillog
 hostname 
@@ -149,92 +149,92 @@ ll /var/mail/root
 telnet smtp.gmail.com 465
 tailf /var/log/maillog
 pwd
-mysqldump -u root --password=hG53LJVO6UbOAK28 --events seamless | bzip2 > /var/www/html/database_backup/seamless_`date +%d_%m_%Y`.sql.gz
+mysqldump -u root --password=hG53LJVO6UbOAK28 --events vm999 | bzip2 > /var/www/html/database_backup/vm999_`date +%d_%m_%Y`.sql.gz
 exit
-mysqldump -u root --password=hG53LJVO6UbOAK28 --events seamless | bzip2 > /var/www/html/database_backup/seamless_`date +%d_%m_%Y`.sql.gz
+mysqldump -u root --password=hG53LJVO6UbOAK28 --events vm999 | bzip2 > /var/www/html/database_backup/vm999_`date +%d_%m_%Y`.sql.gz
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
-cd /var/www/html/seamless/
-git pull
-git update-index --assume-unchanged application/views/login/login_erp.html 
-git status
+cd /var/www/html/vm999/
 git pull
 git update-index --assume-unchanged application/views/login/login_erp.html 
 git status
 git pull
 git update-index --assume-unchanged application/views/login/login_erp.html 
 git status
+git pull
+git update-index --assume-unchanged application/views/login/login_erp.html 
+git status
 exit
-telnet mail.tegaindustries.com 25
+telnet mail.vm999.com 25
 exit
-telnet mail.tegaindustries.com 25
+telnet mail.vm999.com 25
 exit
 cd /var/www/html/imailservice/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git status
 git update-index --assume-unchanged  application/public/uploads/curl-session
 git status
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git status
 git pull
 git status
 exit
-cd /var/www/html/seamless
+cd /var/www/html/vm999
 git status
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git status
 cd application/models/kms_document/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
-cd /var/www/html/seamless/
-git pull
-exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
 git pull
 exit
-cd /var/www/html/seamless/
+cd /var/www/html/vm999/
+git pull
+exit
+cd /var/www/html/vm999/
 git pull
 exit
 vi /etc/httpd/conf/httpd.conf 
@@ -245,16 +245,16 @@ openssl req -new -newkey rsa:2048 -nodes -keyout tegaknowledgecentre.key -out te
 exit
 pwd
 ls -l
-cp tegaknowledgecentre.csr tegaknowledgecentre.key /var/www/html/
+cp vm999.csr vm999.key /var/www/html/
 exit
-openssl req -new -newkey rsa:2048 -nodes -keyout tegaknowledgecentre.key -out tegaknowledgecentre.csr
-cp tegaknowledgecentre.csr tegaknowledgecentre.key /var/www/html/
+openssl req -new -newkey rsa:2048 -nodes -keyout vm999.key -out vm999.csr
+cp vm999.csr vm999.key /var/www/html/
 exit
 ifconfig
 netstat -ntlp
 cd /var/www/html/
 ll
-cd tegaknowledgecentre
+cd vm999
 ll
 locate mod
 ll
@@ -307,10 +307,10 @@ ll
 vi httpd.conf 
 cd /var/www/html/
 ll
-cp tegaknowledgecentre.csr tegaknowledgecentre.key /etc/httpd/ssl/
+cp vm999.csr vm999.key /etc/httpd/ssl/
 cd /etc/httpd/ssl/
 ll
-vi tegaknowledgecentre.crt
+vi vm999.crt
 vi gd_bundle-g2-g1.cer
 ll
 pwd
@@ -335,12 +335,12 @@ cd conf
 netstat -ntlp | grep httpd
 csf -s
 iptables -L
-telnet 45.114.143.14 443
+telnet 41.7.88.14 443
 ll
 cd ..
 cd conf.d/
 ll
-vi tegaknowledgecentre-ssl.conf
+vi vm999-ssl.conf
 ll
 vi ssl.conf
 ll
@@ -354,13 +354,13 @@ SSLCertificateKeyFile /etc/apache2/ssl4dec15/igainapp.key
 SSLCACertificateFile /etc/apache2/ssl4dec15/intermediate.crt
 clear
 ll
-vi tegaknowledgecentre-ssl.conf
+vi vm999-ssl.conf
 httpd -t
 ll
 vi ssl.conf
-vi tegaknowledgecentre-ssl.conf
+vi vm999-ssl.conf
 vi ssl.conf
-rm -rf tegaknowledgecentre-ssl.conf
+rm -rf vm999-ssl.conf
 ll
 vi ssl.conf
 httpd -t
@@ -395,7 +395,7 @@ clear
 exit
 cd /etc/httpd/ssl
 ll
-vi tegaknowledgecentre.csr
+vi vm999.csr
 exit
 netstat -ntlp
 vi /etc/httpd/conf.d/ssl.conf
@@ -418,9 +418,9 @@ vi /opt/ssl.conf
 tailf /var/log/httpd/error_log
 vi /etc/httpd/conf.d/ssl.conf
 tailf /var/log/httpd/error_log
-mysqldump -u root --password=hG53LJVO6UbOAK28 --events seamless | bzip2 > /var/www/html/database_backup/seamless_`date +%d_%m_%Y`.sql.gz
+mysqldump -u root --password=hG53LJVO6UbOAK28 --events vm999 | bzip2 > /var/www/html/database_backup/vm999_`date +%d_%m_%Y`.sql.gz
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/vm999/vm999/
 git pull
 exit
 mysql
@@ -429,16 +429,16 @@ mysql:
 /usr/bin/mysql -u root -p
 service mysqld restart
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/vm999/vm999/
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/vm999/vm999/
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/vm999
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/vm999
 git pull
 exit
 ls
@@ -447,30 +447,30 @@ cd ..
 ll
 cd var/www/html/
 ll
-cd tegaknowledgecentre
+cd vm999
 ll
-cd seamless/
+cd vm999/
 ll
 git status
 git update-index --assume-unchanged system/core/config/system.config.php
 git status
 git pull
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/tvm999
 git pull
 df -h
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/tegvm999
 git pull
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/tevm999
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/tevm999
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/tvm999
+git pull
+exit
+cd /var/www/html/tegvm999
 git update-index --assume-unchanged application/views/dynamodule/document.html
 git status
 exit
@@ -506,7 +506,7 @@ cat /etc/redhat-release `
 cat /etc/redhat-release
 uname -r
 cd /tmp
-wget --user=ctrlsadmin --password=Ct6LSDC123 http://103.1.113.81/pub/rhn6-64.sh
+wget --user=ctrlsadmin --password=Ct6LSDC123 http://13.1.113.81/pub/rhn6-64.sh
 chmod +x rhn6-64.sh 
 ./rhn6-64.sh 
 hostname
@@ -534,57 +534,42 @@ cd /tmp
 bash rh-cve-2016-5195_5.sh 
 rhn_check -vv
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/vm999
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+
 cd application/controllers/
 git pull
 exit
 cd /var/www/html/tegaknowledgecentre/seamless/application/
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/application/
+cd /var/www/html/tevm999
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/application/
+cd /var/www/html/tegvm999
 cd ..
 ll
 git commit -m "1st commit"
 git status
 git push
-cd /var/www/html/tegaknowledgecentre/seamless/application/
+cd /var/www/html/tegavm999
 cd ..
 git status
 git push
 git status
 git push
 git push -u origin master
-git config --global user.name "Tega"
-git config --global user.email susanta.das@somnetics.in
+git config --global user.name "vm999"
+git config --global user.email vm999
 git push -u origin master
 git pull
 ll
 cd ..
 ll
-tar -cvf tega.tar seamless/
+tar -cvf vm999.tar vm999/
 ll
-cd seamless/
+cd vm999/
 ll
 git status
 git push
@@ -599,9 +584,9 @@ clear
 exit
 cd /var/www/html/
 ll
-cd tegaknowledgecentre
+cd vm999
 ll
-cd seamless/
+cd vm999/
 ll
 git status
 ll
@@ -609,7 +594,7 @@ git init
 git status
 git add .
 git status
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/tvm999
 ll
 git status
 git add .gitattributes 
@@ -620,78 +605,60 @@ ll
 cd /
 ll
 cd var/www/html/
-cd tegaknowledgecentre
+cd vm999
 ll
-cd seamless/
+cd vm999
 ll
 ll -a
 git status
 git pull
 cd ..
-cd idoc-repository/
+cd vm999-repository/
 git status
 git pull
 exit
 ll
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/vm999
 git status
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
+cd /var/www/html/tvm999
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre
-cd seamless/
+cd /var/www/html/vm999
+cd vm999
 git pull
 exit
 cd /var/www/html/
-cd tegaknowledgecentre/seamless/
+cd vm999
 git pull 
 cd ..
 ll
-cd idoc-repository/
 git status
 git pull
 cd ..
-cd seamless/
 git status
 git update-index --assume-unchanged application/config/app.config.php
 git update-index --assume-unchanged system/core/config/system.config.php 
 git status
-cd /var/www/html/tegaknowledgecentre/seamless/
 git pull
 exit
 cd /var/www/
 ll
 cd html/
 ll
-cd tegaknowledgecentre/seamless/
-ll
 git status
 git pull
 node init
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
 git status
 git pull
 exit
 cd /var/www/
 ll
-cd html/tegaknowledgecentre/seamless/
-git pull
-cd /var/www/html/tegaknowledgecentre/seamless/
-git status
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
 chmod 777 -R application/public/assets/avatars
 exit
 telnet smtp.gmail.com 465
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
 git status
 git add .
 git commit -m "avatar"
@@ -699,35 +666,11 @@ git status
 git pull
 git push
 exit
-cd /var/www/html/tegaknowledgecentre
 li
 ls
-cd seamless
-ls
-cd..
-cd ..
-ls
-cd ..
-ls
-cd tegaknowledgecentre
-cd seamless
-ls
-li
-status
+
 git status
-cd /var/www/html/tegaknowledgecentre/seamless/
-git status
-git pull
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-cd /var/www/html/tegaknowledgecentre/seamless/
-git status
-git pull
-git status
-git add application/public/assets/images/tega_mail_logo.png
+git add application/public/assets/
 git status
 git push
 git commit -m "ddd"
@@ -737,7 +680,7 @@ git commit -m "logo delete"
 git status
 git push 
 git status
-git add application/public/assets/images/tega_mail_logo.png
+git add application/public/
 git commit -m "logo delete"
 git push 
 git pull --rebase
@@ -745,22 +688,15 @@ git push -f
 git status
 git pull
 git status
-git add application/public/assets/images/tega_mail_logo.png
+git add application/public/assets/ima
 git commit -m "logo delete"
 git push
-git checkout -- application/public/assets/images/tega_mail_logo.png
+git checkout -- application/public/asset
 git status
 git push
 git pull
 exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git pull
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git status
-exit
-cd /var/www/html/tegaknowledgecentre/seamless/
-git status
+
 git pull
 exit
 df -h
@@ -803,8 +739,8 @@ cd home/
 ls
 cd tega/
 ls
-wget https://45.114.143.14/phpinfo.php
-wget https://tegaknowledgecentre.com/phpinfo.php
+wget https://40.00.99.14/phpinfo.php
+wget https://vm999.com/phpinfo.php
 scp
 ls
 vi phpinfo.php 
