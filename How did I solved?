@@ -31,5 +31,7 @@ type yum on terminal will shows yum options..
 Problem: 
 Detect And Mount CD-ROM Install Kali Linux using USB bootable drive(Using Rufus)
 Solution: Open a shell(BusyBox Shell) > type
+lsblk
 mount -t vfat /dev/sdb1 /cdrom
+Or select as dd image when creating bootable device.
 -------------------------------------------------------------------------------------------------------------------------
