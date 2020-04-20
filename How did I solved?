@@ -28,3 +28,8 @@ wget http://mirror.centos.org/centos/6.9/os/x86_64/Packages/python-2.6.6-66.el6_
 rpm -ivh python-2.6.6-66.el6_8.x86_64.rpm
 type yum on terminal will shows yum options..
 -------------------------------------------------------------------------------------------------------------------------
+Problem: 
+Detect And Mount CD-ROM Install Kali Linux using USB bootable drive(Using Rufus)
+Solution: Open a shell(BusyBox Shell) > type
+mount -t vfat /dev/sdb1 /cdrom
+-------------------------------------------------------------------------------------------------------------------------
